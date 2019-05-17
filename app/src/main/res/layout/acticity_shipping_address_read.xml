@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="管理收货地址"
+            android:textColor="#666"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="修改"
+            android:padding="26px"
+            android:textColor="@color/blue_head"
+
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/white"
+        android:hint="收货人 打扫打扫"
+        android:textColorHint="#b3b3b3"
+        android:textSize="28px"
+        android:paddingLeft="30px"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:id="@+id/name_et_view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/name_et"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/name_et_view"
+        android:background="@color/white"
+        android:hint="请输入电话"
+        android:textColorHint="#b3b3b3"
+        android:textSize="28px"
+        android:paddingLeft="30px"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:id="@+id/phone_et_view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/phone_et"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/address_et"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/phone_et_view"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="选择地址"
+        android:textColorHint="#b3b3b3"
+        android:textSize="28px"
+        android:paddingLeft="30px"
+        />
+
+    <View
+        android:id="@+id/address_et_view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/address_et"
+        android:background="@color/grey" />
+    <RelativeLayout
+
+        android:id="@+id/datail_et_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_below="@+id/address_et_view"
+        android:background="@color/white"
+        android:gravity="top"
+        >
+        <TextView
+            android:id="@+id/datail_et_text"
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+
+
+            android:background="@color/white"
+            android:text="详细地址"
+            android:textColorHint="#b3b3b3"
+            android:textSize="28px"
+            android:paddingLeft="30px"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/datail_et"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/datail_et_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="a"
+            android:textSize="28px"
+            android:layout_marginLeft="79px"
+            android:layout_marginRight="33px"
+            android:paddingBottom="5px"
+
+            />
+
+    </RelativeLayout>
+
+
+
+<!--其他的联系人-->
+
+    <LinearLayout
+        android:id="@+id/qtshr_ll"
+        android:layout_below="@+id/datail_et_ll"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/mrshr_name_et1"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="收货人"
+            android:textColorHint="#b3b3b3"
+            android:textSize="28px"
+            android:paddingLeft="30px"
+
+            />
+        <View
+            android:id="@+id/mrshr_name_et_del1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/address_et"
+            android:background="@color/grey" />
+        <TextView
+            android:id="@+id/mrshr_phone_et1"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="电话"
+            android:textColorHint="#b3b3b3"
+            android:textSize="28px"
+            android:paddingLeft="30px"
+
+            />
+
+<!--2-->
+        <TextView
+            android:id="@+id/mrshr_name_et2"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="收货人"
+            android:textColorHint="#b3b3b3"
+            android:textSize="28px"
+            android:paddingLeft="30px"
+            android:layout_marginTop="20px"
+
+            />
+        <View
+            android:id="@+id/mrshr_name_et_del2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/address_et"
+            android:background="@color/grey" />
+        <TextView
+            android:id="@+id/mrshr_phone_et2"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="电话"
+            android:textColorHint="#b3b3b3"
+            android:textSize="28px"
+            android:paddingLeft="30px"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@+id/qtshr_ll"
+        android:id="@+id/del_address"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white"
+        android:gravity="center"
+
+        android:textColorHint="#b3b3b3"
+        android:textSize="28px"
+        android:paddingLeft="30px"
+        android:textColor="@color/orange_head"
+        android:text="删除收货地址"
+        android:layout_marginTop="60px"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

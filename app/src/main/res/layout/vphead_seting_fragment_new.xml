@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pst="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/serach"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="#E5E5E5">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+              android:hint="输入货品名称/货品编码/供应商名称"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#666"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="分类筛选"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#666"
+            android:textSize="13sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <com.jisupei.activity.datail.wiget.MyDatailPagerSlidingTabStrip
+        android:id="@+id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/head_include"
+        android:background="@color/white"
+        pst:pstsDividerColor="#00000000"
+        pst:pstsIndicatorColor="@color/yellow1"
+        pst:pstsIndicatorHeight="2dp"
+        pst:pstsScaleZoomMax="0"
+        pst:pstsShouldExpand="true"
+
+        pst:pstsTextAllCaps="false"
+        pst:pstsTextSelectedColor="@color/yellow1"
+        pst:pstsUnderlineColor="#B3B3B3"
+        pst:pstsUnderlineHeight="1dp" />
+
+    <com.jisupei.activity.datail.wiget.MyViewPager
+        android:id="@+id/id_stickynavlayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</LinearLayout>

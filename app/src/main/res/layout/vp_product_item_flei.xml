@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/flei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@+id/price_text"
+
+        android:text="库存12"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:gravity="center"
+
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+
+
+        android:layout_alignParentBottom="true"
+        />
+
+</LinearLayout>

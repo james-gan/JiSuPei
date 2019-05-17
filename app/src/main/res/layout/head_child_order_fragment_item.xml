@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/shop_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="店子名称"
+            android:textSize="28px"
+            android:layout_marginTop="20px"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待发货"
+            android:textSize="28px"
+            android:textColor="@color/yellow1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="20px"
+            />
+        <View
+            android:id="@+id/henxian_flag"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/yellow1"
+            android:layout_below="@+id/shop_name_tv"
+            android:layout_marginTop="25px"
+            />
+
+        <TextView
+            android:id="@+id/order_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号：5456465465"
+            android:textSize="28px"
+
+            android:layout_below="@+id/henxian_flag"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px"
+            />
+
+        <TextView
+            android:id="@+id/category_procurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采购总类:4"
+            android:textSize="28px"
+
+            android:layout_below="@+id/order_id_tv"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="25px"
+            />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单价格：45000.00"
+            android:textSize="28px"
+             android:layout_alignTop="@+id/category_procurement"
+                android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:textColor="@color/yellow111"
+            />
+
+        <View
+            android:id="@+id/henxian_flag1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#DDDDDD"
+            android:layout_below="@+id/order_price"
+            android:layout_marginTop="20px"
+            />
+
+        <TextView
+            android:id="@+id/time_procurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-09-09 11:23:00"
+            android:textSize="28px"
+
+            android:layout_below="@+id/henxian_flag1"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="25px"
+            />
+
+        <TextView
+            android:id="@+id/yunfei_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费：45000.00"
+            android:textSize="28px"
+            android:layout_alignTop="@+id/time_procurement"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:textColor="@color/yellow111"
+            />
+        <ImageView
+            android:id="@+id/three_pin"
+            android:layout_below="@+id/yunfei_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/three_pin"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            />
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="105px"
+            android:layout_below="@+id/three_pin"
+            android:gravity="right|center_vertical"
+            android:background="#999999"
+            android:layout_marginTop="-3px"
+            >
+            <LinearLayout
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                >
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:src="@mipmap/head_close"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭"
+                    android:layout_marginTop="10px"
+                    android:textSize="22px"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                 android:layout_toLeftOf="@+id/menu1"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+
+                >
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:src="@mipmap/head_check"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核"
+                    android:layout_marginTop="10px"
+                    android:textSize="22px"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/menu2"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+
+                >
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:src="@mipmap/head_send"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发货"
+                    android:layout_marginTop="10px"
+                    android:textSize="22px"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/menu3"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+
+                >
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:src="@mipmap/head_modify"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="改价"
+                    android:layout_marginTop="10px"
+                    android:textSize="22px"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/menu5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/menu4"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+
+                >
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:src="@mipmap/head_detail"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情"
+                    android:layout_marginTop="10px"
+                    android:textSize="22px"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_below="@+id/rel"
+            android:background="#F1F1F1"
+            ></View>
+    </RelativeLayout>
+
+</RelativeLayout>

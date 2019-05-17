@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+         <!--android:id="@+id/img_flag"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+         <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+
+        <!--android:layout_marginRight="20px"-->
+        <!--android:src="@mipmap/whidehape_blue"-->
+
+        <!--android:textSize="30px" />-->
+    <LinearLayout
+
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/yige_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+            android:visibility="gone"
+
+            >
+
+            <TextView
+                android:id="@+id/yige_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_weight="1"
+                android:text="dsadas"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/yige_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="85px"
+                android:text="213123123"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sange_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="185px"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/shape_address"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/shr"
+                    />
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+
+                    android:text="dsadas3213sadsdsadsadasadsasdsa213213123d"
+                    android:textSize="26px"
+
+
+                    android:layout_toRightOf="@+id/iv_1"
+                    android:layout_alignBottom="@+id/iv_1"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginBottom="-4px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/phone_et1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name1"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:text="18677998899"
+                    android:textSize="26px"
+
+                    android:layout_marginTop="20px"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="185px"
+                android:layout_height="120px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_address"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/shr"
+                    />
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+
+
+                    android:text="dsa阿萨撒啊dassa啊多萨"
+                    android:textSize="26px"
+
+                    android:layout_toRightOf="@+id/iv_2"
+                    android:layout_alignBottom="@+id/iv_2"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginBottom="-4px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/phone_et2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name2"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:text="18677998899"
+                    android:textSize="26px"
+
+                    android:layout_marginTop="20px"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="185px"
+                android:layout_height="120px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_address"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/shr"
+                    />
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:text="dsadas"
+                    android:textSize="26px"
+
+                    android:layout_toRightOf="@+id/iv_3"
+                    android:layout_alignBottom="@+id/iv_3"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginBottom="-4px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/phone_et3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name3"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:text="18677998899"
+                    android:textSize="26px"
+
+                    android:layout_marginTop="20px"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:layout_marginRight="46px"
+                android:textColor="#666666"
+                android:text="湖北省武汉市"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/ll"
+        android:background="@color/grey" />
+</RelativeLayout>

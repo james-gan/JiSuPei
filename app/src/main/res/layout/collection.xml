@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_white"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/top_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="@color/yellow1"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/back_bt"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:text="我的收藏"-->
+            <!--android:id="@+id/textView"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/back_bt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#666"
+            android:text="我的收藏"
+            android:id="@+id/textView"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listviewPullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:layout_marginTop="10px"
+        android:background="@color/light_white" >
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/page_tab_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="@color/light_white"
+            android:dividerHeight="12dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+
+            />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+    <!--<ListView-->
+
+        <!--android:id="@+id/page_tab_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--android:cacheColorHint="@color/white"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:divider="@color/transparent"-->
+        <!--android:dividerHeight="0dip"-->
+        <!--android:visibility="invisible"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:fastScrollEnabled="false"-->
+        <!--android:listSelector="@color/transparent"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_cart_height"
+        android:layout_alignParentBottom="true"
+        android:background="#192F4A"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_total_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/shopping_cart_total_price_left_magrin"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="120"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopping_cart_total_price_word_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+
+            android:background="@color/yellow111"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <!--圆圈-->
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shopping_cart_bottom_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/circle">
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/gouwu1" />
+
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_homepage_orang"
+            android:gravity="center"
+            android:text="81"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/cart_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@mipmap/bottom_bg"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cart_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:src="@mipmap/cart_index"/>-->
+
+        <!--<TextView android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_toRightOf="@+id/cart_image"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="8"-->
+            <!--android:id="@+id/cart_num"-->
+            <!--android:visibility="invisible"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="12dp"-->
+            <!--android:background="@drawable/red_circle_bg"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/cart_num"-->
+            <!--/>-->
+        <!--<RelativeLayout android:layout_width="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView android:id="@+id/cart_num_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="添加购物车"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:id="@+id/submit_bt"-->
+                <!--android:layout_width="110dp"-->
+                <!--android:background="@color/yellow111"-->
+                <!--android:text="提交"-->
+                <!--android:visibility="invisible"-->
+                <!--android:padding="15dp"-->
+                <!--android:textSize="16dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_height="wrap_content"/>-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

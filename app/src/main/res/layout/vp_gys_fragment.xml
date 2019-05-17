@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@color/blue_head"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/serach_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+
+            >
+
+            <!--<TextView-->
+                <!--android:id="@+id/search_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:drawableLeft="@mipmap/search_home"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:text="输入供应商编码/供应商名称"-->
+                <!--android:textColor="#666666"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="12sp" />-->
+            <EditText
+                android:id="@+id/search_et"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:hint="供应商名称/编码"
+                android:textColor="#666666"
+                android:background="#00000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/flcd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_top3"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quanbu"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/blue_head"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/qiyong"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="启用"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tingyong"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="停用"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/flcd"
+        android:background="#C8C7CC"></View>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:background="@color/light_white">
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/relListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+
+</RelativeLayout>

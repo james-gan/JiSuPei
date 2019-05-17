@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="酱油酱油酱油酱油"
+            android:textSize="28px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="50px"
+            />
+
+        <TextView
+            android:id="@+id/guige_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="规格：1000g(1件=6包)"
+            android:textSize="28px"
+            android:layout_below="@+id/product_name"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="20px"
+            />
+        <TextView
+            android:id="@+id/product_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="20.00"
+            android:textSize="28px"
+            android:textColor="@color/orange_head"
+          android:layout_alignTop="@+id/product_name"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/product_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="x5"
+            android:textSize="28px"
+            android:layout_below="@+id/product_price_tv"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/rl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="20px"/>
+
+
+</RelativeLayout>

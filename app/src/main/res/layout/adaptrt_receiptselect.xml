@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <TextView
+            android:id="@+id/wldh_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:textSize="30px"
+            android:drawablePadding="10px"
+            android:drawableLeft="@mipmap/wldh"
+            android:text="物流单号：46565444" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="132px"
+            android:layout_height="49px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/shape_order_blue"
+            android:text="上传异常"
+            android:textColor="@color/white"
+            android:textSize="29px"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#DDDDDD"
+        ></View>
+
+
+</LinearLayout>

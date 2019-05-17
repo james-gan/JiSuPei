@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="审核订单"
+            android:textColor="#666"
+            android:textSize="32px"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:textColor="#666666" />
+
+    <com.jingchen.pulltorefresh.PullableListView
+        android:id="@+id/hd_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f1f1f1"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/hji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="合计:"
+            android:layout_marginLeft="30px"
+            android:textSize="30px"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:id="@+id/hji_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="13.00"
+
+            android:textSize="30px"
+            android:textColor="@color/orange_head"
+            android:layout_toRightOf="@+id/hji"
+            />
+        <Button
+            android:id="@+id/refused_button"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:background="@color/orange_head"
+            android:text="拒绝订单"
+            android:textColor="@color/white"
+          android:layout_toLeftOf="@+id/through_button"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/through_button"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:background="@color/blue_head"
+            android:text="审核通过"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+</LinearLayout>

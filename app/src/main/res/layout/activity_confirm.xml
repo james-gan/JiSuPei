@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="确认收货"
+            android:textColor="#666"
+            android:textSize="32px"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/grr_code"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/wldh"
+        android:drawablePadding="10px"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:text="运单编号：---"
+        android:textSize="30px" />
+    <com.jingchen.pulltorefresh.PullableRecyclerView
+        android:id="@+id/hd_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"></com.jingchen.pulltorefresh.PullableRecyclerView>
+
+    <Button
+        android:id="@+id/qunren"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:background="@color/blue_head"
+        android:text="确认收货"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+</LinearLayout>

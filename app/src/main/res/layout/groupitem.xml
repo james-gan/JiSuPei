@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="107px">
+        <ImageView
+            android:id="@+id/img_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/under_icon"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_group_text"
+            android:layout_width="390px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/cil"
+            android:layout_centerVertical="true"
+            android:textColor="#656565"
+            android:text="啊啊撒旦撒旦阿达撒打旦撒旦阿达撒打旦撒旦阿达撒打算打啊啊啊"
+
+
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="207px"
+             android:layout_toLeftOf="@+id/img_indicator"
+            android:layout_centerVertical="true"
+            android:textColor="#656565"
+            android:text="2016-12-21 19:20"
+              android:layout_marginRight="15px"
+            android:textSize="25px"/>
+        <TextView
+          android:id="@+id/cil"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/circle_bg_yellow"
+        />
+        <!--<Button-->
+            <!--android:id="@+id/btn_group_function"-->
+            <!--android:focusable="false"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:gravity="right"-->
+            <!--android:background="@mipmap/pen" />-->
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="20dp"
+
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:text="zhang san"
+            android:textSize="30px"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

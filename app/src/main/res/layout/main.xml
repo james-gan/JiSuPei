@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/light_grey"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_badge"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@color/yellow1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message_point"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:background="@drawable/white_circle1"
+            android:layout_toRightOf="@+id/message"
+            android:layout_toLeftOf="@+id/mine"
+            android:drawableLeft="@mipmap/serch_index"
+            android:paddingLeft="8dp"
+            android:editable="false"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:hint="输入食材名称/关键字搜索"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/mine"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/my_index"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/main_include"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_badge"
+        android:layout_above="@+id/cart_layout"
+        android:id="@+id/products"
+        android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bottom_bg"
+        >
+
+        <ImageView
+            android:id="@+id/cart_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/cart_index"/>
+
+        <TextView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/cart_image"
+            android:layout_marginTop="8dp"
+            android:text="8"
+            android:id="@+id/cart_num"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/red_circle_bg"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cart_num"
+            />
+
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/cart_num_text"
+                android:layout_width="wrap_content"
+                android:text="添加购物车"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="110dp"
+                android:background="@color/yellow"
+                android:text="提交"
+                android:visibility="invisible"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

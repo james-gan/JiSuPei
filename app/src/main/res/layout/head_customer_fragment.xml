@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head_cus"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="104px">
+        <ImageView
+            android:id="@+id/include_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_marginLeft="30px"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/include_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是那个和"
+            android:textSize="31px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/include_menu_iv1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10px"-->
+            <!--android:text="添加"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="31px"-->
+            <!--android:paddingLeft="20px"-->
+            <!--android:paddingRight="20px"-->
+            <!--/>-->
+        <ImageView
+            android:id="@+id/include_menu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tianjai"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#B3B3B3"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ck_rl"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/head_cus"
+        android:layout_height="80px">
+
+        <TextView
+            android:id="@+id/ck"
+            android:layout_width="wrap_content"
+            android:text="全部"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:textSize="28px"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/textView_iv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6px"
+            android:layout_toRightOf="@+id/ck"
+            android:src="@mipmap/order_bottom" />
+
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/ck_rl"
+        android:background="@color/light_white">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:background="@color/white"
+
+            ></com.jingchen.pulltorefresh.PullableRecyclerView>
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="400px"-->
+    <!--android:background="@color/red"-->
+    <!--android:visibility="gone"-->
+    <!--android:orientation="vertical"-->
+    <!--android:animateLayoutChanges="true"-->
+    <!--&gt;-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

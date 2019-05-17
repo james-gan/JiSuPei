@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/left_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_marginLeft="6dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:textColor="#666"
+            android:text="23213上dwqewdsadasdasdsaewqe啊" />
+        <!--android:background="@drawable/circle_bg_red"-->
+        <!--android:paddingLeft="3dp"-->
+        <!--android:paddingRight="3dp"-->
+        <!--android:paddingTop="2dp"-->
+        <!--android:paddingBottom="2dp"-->
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_homepage_orang"
+            android:gravity="center"
+
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/left_view"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/blue_head" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:text="武汉分公司 ----> 郑州分公司"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/time"
+        android:text="2016-04-01 17:38:41"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

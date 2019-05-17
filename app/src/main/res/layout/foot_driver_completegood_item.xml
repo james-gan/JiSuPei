@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="请上传现场退货照片【最多5张】"
+    android:layout_marginLeft="30px"
+    android:layout_marginTop="30px"
+    android:textSize="28px"
+    />
+            <!--图片-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10px"
+                android:paddingBottom="25px">
+
+                <LinearLayout
+                    android:id="@+id/img_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <!--1-->
+                    <RelativeLayout
+                        android:id="@+id/add1_rl"
+
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:background="@color/white"
+                        >
+                        <ImageView
+                            android:id="@+id/add1_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                               android:layout_margin="10px"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:id="@+id/add1_iv_del"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:src="@mipmap/close_red"
+                             android:layout_alignParentRight="true"
+                            android:layout_marginLeft="-20px"
+                            />
+                    </RelativeLayout>
+                    <!--2-->
+                    <RelativeLayout
+                        android:id="@+id/add2_rl"
+                        android:visibility="gone"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:background="@color/white"
+                        >
+                        <ImageView
+                            android:id="@+id/add2_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10px"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:id="@+id/add2_iv_del"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:src="@mipmap/close_red"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="-20px"
+                            />
+                    </RelativeLayout>
+                    <!--3-->
+                    <RelativeLayout
+                        android:id="@+id/add3_rl"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:background="@color/white"
+                        >
+                        <ImageView
+                            android:id="@+id/add3_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10px"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:id="@+id/add3_iv_del"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:src="@mipmap/close_red"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="-20px"
+
+                            />
+                    </RelativeLayout>
+                    <!--4-->
+                    <RelativeLayout
+                        android:id="@+id/add4_rl"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:background="@color/white"
+                        >
+                        <ImageView
+                            android:id="@+id/add4_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10px"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:id="@+id/add4_iv_del"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:src="@mipmap/close_red"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="-20px"
+
+                            />
+                    </RelativeLayout>
+                    <!--5-->
+                    <RelativeLayout
+                        android:id="@+id/add5_rl"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:background="@color/white"
+                        >
+                        <ImageView
+                            android:id="@+id/add5_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10px"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:id="@+id/add5_iv_del"
+                            android:layout_width="34px"
+                            android:layout_height="34px"
+                            android:src="@mipmap/close_red"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="-20px"
+
+                            />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/add_img"
+                        android:layout_width="140px"
+                        android:layout_height="140px"
+                        android:src="@mipmap/add_image_wuliu"
+                        android:layout_margin="10px"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="20px"-->
+        <!--android:background="#f1f1f1"-->
+        <!--&gt;</View>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+         <!--android:paddingTop="30px"-->
+        <!--android:paddingBottom="30px"-->
+        <!--&gt;-->
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="商品金额："-->
+
+            <!--android:textSize="28px"-->
+            <!--android:layout_toLeftOf="@+id/price_sum"-->
+            <!--android:layout_alignTop="@+id/price_sum"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/price_sum"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="212.00"-->
+                <!--android:layout_alignParentRight="true"-->
+            <!--android:textSize="28px"-->
+            <!--android:textColor="@color/orange_head"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="应退款："-->
+
+            <!--android:textSize="28px"-->
+            <!--android:layout_toLeftOf="@+id/return_money"-->
+            <!--android:layout_alignTop="@+id/return_money"-->
+
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/return_money"-->
+            <!--android:layout_below="@+id/price_sum"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="111"-->
+
+            <!--android:layout_marginTop="10px"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textSize="28px"-->
+            <!--android:textColor="@color/orange_head"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="应收款："-->
+
+            <!--android:textSize="28px"-->
+            <!--android:layout_toLeftOf="@+id/get_money"-->
+            <!--android:layout_alignTop="@+id/get_money"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/get_money"-->
+            <!--android:layout_below="@+id/return_money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="11"-->
+
+            <!--android:layout_marginTop="10px"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textSize="28px"-->
+            <!--android:textColor="@color/orange_head"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+<!--</RelativeLayout>-->
+
+</LinearLayout>

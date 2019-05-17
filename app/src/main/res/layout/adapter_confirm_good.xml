@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="165px"
+        android:layout_marginBottom="10px"
+        android:background="#f1f1f1">
+
+        <RelativeLayout
+            android:id="@+id/img_rl"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10px"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginLeft="30px"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@mipmap/add_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sp_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_rl"
+           android:singleLine="true"
+            android:layout_marginLeft="25px"
+            android:layout_toRightOf="@+id/img_rl"
+            android:text="酱油油油酱"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/sp_guig_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/sp_name_tv"
+            android:layout_below="@+id/sp_name_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5px"
+            android:text="规格：100*10g(1件=20袋)"
+            android:textColor="#A6A6A6"
+            android:textSize="26px"
+
+            />
+
+        <TextView
+            android:id="@+id/daishou_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sp_name_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="10px"
+            android:text="待收10件50待"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/jian_danwei"
+                android:layout_marginRight="5px"
+
+                android:gravity="center"
+                android:text="实收:"
+                android:textColor="#666666"
+
+                android:textSize="29px" />
+
+            <TextView
+                android:id="@+id/jian"
+                android:layout_width="78px"
+                android:layout_height="50px"
+
+                android:layout_marginRight="5px"
+                android:background="@drawable/shape_order_grey_width"
+                android:gravity="center"
+
+                android:textColor="#666666"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/jian_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="1px"
+
+                android:layout_toLeftOf="@+id/dai"
+                android:gravity="center"
+                android:text="件"
+
+                android:textColor="#666666"
+
+                android:textSize="25px" />
+
+
+            <TextView
+                android:id="@+id/dai_num"
+                android:layout_width="78px"
+                android:layout_height="50px"
+                android:layout_marginRight="5px"
+                android:background="@drawable/shape_order_grey_width"
+                android:gravity="center"
+
+                android:textColor="#666666"
+
+
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/dai_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginRight="20px"
+                android:text="袋"
+                android:textColor="#666666"
+                android:textSize="25px"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

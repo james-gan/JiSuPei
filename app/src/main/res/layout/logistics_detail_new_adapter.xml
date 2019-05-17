@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titile_tt"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/blue_head"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/titile_tt"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="-9dp"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/view_0"
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:layout_toRightOf="@+id/titile_tt"
+                android:background="#DDDDDD" />
+
+
+            <ImageView
+                android:id="@+id/fhr_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/view_0"
+                android:layout_toRightOf="@+id/titile_tt"
+                android:src="@mipmap/fahuoren" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fhr_et"
+
+                android:layout_toRightOf="@+id/titile_tt"
+                android:background="#DDDDDD" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_id_tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/lin1"
+            android:text="订单提交dsadsadsadsadsadsadsadsadasdsad "
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sj_tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_id_tt"
+            android:layout_below="@+id/order_id_tt"
+            android:text="(司机:李进 联系电话：15646564646)"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+    </RelativeLayout>
+<View
+    android:id="@+id/dsas"
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="#f1f1f1"
+    android:layout_below="@+id/content"
+    android:visibility="gone"
+
+    ></View>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84px">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close_red1"
+            android:padding="12px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="-10px"
+
+            />
+        <TextView
+            android:id="@+id/contanct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:textSize="30px"
+            android:layout_toRightOf="@+id/close"
+            />
+
+        <TextView
+            android:id="@+id/contanct_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12321321312"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:layout_toLeftOf="@+id/jiantou"
+            android:layout_marginRight="40px"
+            android:textSize="30px"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_button11"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#999999"
+            android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
+
+</LinearLayout>

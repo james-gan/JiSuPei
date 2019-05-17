@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/top_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/yellow1"-->
+        <!--android:padding="5dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_bt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="?android:attr/selectableItemBackground"-->
+            <!--android:src="@mipmap/ic_keyboard_arrow_left_white_36dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="注册"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="40px" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="26px"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="#666"
+            android:textSize="32px" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/mc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="公司名称"
+        android:textColor="#373737"
+        android:textSize="32px" />
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/yqm_et"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="80px"-->
+        <!--android:layout_marginLeft="60px"-->
+        <!--android:hint="请填写注册邀请码"-->
+        <!--android:textColorHint="#c6c6cc"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:inputType="number"-->
+        <!--android:textSize="28px" />-->
+    <TextView
+        android:id="@+id/qymc"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:text=""
+        android:layout_marginRight="40px"
+        android:textColor="@color/yellow1"
+        android:textSize="28px"
+        android:gravity="center_vertical"
+         android:layout_marginLeft="60px"
+
+        />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+
+        />
+    <TextView
+        android:id="@+id/mdmc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="门店名称"
+        android:textColor="#373737"
+        android:textSize="32px" />
+
+    <EditText
+        android:id="@+id/mdxming_et"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="60px"
+        android:hint="请填写门店名称"
+        android:textColorHint="#c6c6cc"
+        android:background="@color/transparent"
+        android:textSize="28px"
+
+        />
+    <View
+
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+        />
+<LinearLayout
+    android:id="@+id/meuduab_pp_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="15px"
+        android:text="门店品牌"
+        android:textColor="#373737"
+        android:textSize="32px" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="153px"
+        android:layout_marginTop="15px"
+        android:text="门店类型"
+        android:textColor="#373737"
+        android:textSize="32px" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/meuduab_pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+    <TextView
+        android:id="@+id/mdpp"
+        android:paddingBottom="15px"
+        android:paddingTop="15px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:hint="请选择门店品牌"
+        android:textColorHint="#c6c6cc"
+        android:textSize="28px" />
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="25px"
+            android:src="@mipmap/regicon"
+            android:layout_marginLeft="20px"
+
+            />
+        <View
+            android:layout_marginLeft="20px"
+            android:layout_width="2px"
+            android:background="#C7C6CC"
+            android:layout_height="60px"></View>
+    <RadioGroup
+        android:layout_marginLeft="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        >
+
+
+            <com.jisupei.utils.widget.MyRadioButton
+                android:layout_width="130px"
+                android:layout_height="wrap_content"
+                android:text="直营"
+                android:textColor="#666666"
+                android:textSize="30px"
+                android:button="@null"
+               android:gravity="center"
+                myradio:drawableLeft="@drawable/select_checkbox"
+                myradio:drawableSize1="30px"
+                android:checked="false"
+                android:clickable="true"
+                android:id="@+id/MyRadioButton1"
+                />
+            <com.jisupei.utils.widget.MyRadioButton
+                android:layout_width="130px"
+                android:layout_height="wrap_content"
+                android:text="加盟"
+                android:textColor="#666666"
+                android:textSize="30px"
+                android:button="@null"
+                myradio:drawableLeft="@drawable/select_checkbox"
+                myradio:drawableSize1="30px"
+                android:checked="false"
+                android:clickable="true"
+                android:gravity="center"
+                android:id="@+id/MyRadioButton2"
+                />
+
+    </RadioGroup>
+ </LinearLayout>
+    <View
+        android:id="@+id/hengxian_text"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="10px"
+        />
+    <TextView
+        android:id="@+id/meidiandi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="门店地址"
+        android:textColor="#373737"
+        android:textSize="32px" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70px"
+    android:orientation="horizontal"
+    android:layout_marginTop="10px"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:id="@+id/mddz_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60px"
+        android:hint="请选择所在地区"
+        android:textColorHint="#c6c6cc"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="28px" />
+
+    <ImageView
+        android:layout_width="14px"
+        android:layout_height="25px"
+        android:src="@mipmap/regicon"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px"
+
+        />
+</LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+        />
+    <EditText
+        android:id="@+id/mdxxdz_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="60px"
+        android:hint="请填写详细地址"
+        android:textColorHint="#c6c6cc"
+        android:background="@color/transparent"
+        android:textSize="28px" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+        />
+    <TextView
+android:id="@+id/meidianquyu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="门店区域"
+        android:textColor="#373737"
+        android:textSize="32px" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/mdqyu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:hint="请选择门店区域"
+            android:gravity="center_vertical"
+
+            android:textColorHint="#c6c6cc"
+            android:layout_weight="1"
+            android:textSize="28px" />
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="25px"
+            android:src="@mipmap/regicon"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+
+        />
+    <TextView
+        android:id="@+id/peisck_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="配送仓库"
+        android:textColor="#373737"
+        android:textSize="32px" />
+
+
+    <LinearLayout
+        android:id="@+id/peisck1_text"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/psck_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:hint="请选择配送仓库"
+            android:gravity="center_vertical"
+            android:textColorHint="#c6c6cc"
+            android:layout_weight="1"
+            android:textSize="28px" />
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="25px"
+            android:src="@mipmap/regicon"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/hengxian_1text"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+
+        />
+
+
+    <TextView
+        android:id="@+id/ywy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="25px"
+        android:text="区域负责人"
+        android:textColor="#373737"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/ywy_et"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="60px"
+        android:hint=""
+        android:textColorHint="#c6c6cc"
+        android:background="@color/transparent"
+        android:textSize="28px"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:id="@+id/hengxian_2text"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#C8C8C8"
+        android:layout_marginLeft="60px"
+        />
+    <View
+
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+
+        android:layout_marginLeft="60px"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_grey2"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+        android:padding="24px"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="40px"
+        android:layout_marginBottom="30px"
+
+        />
+
+
+</LinearLayout>

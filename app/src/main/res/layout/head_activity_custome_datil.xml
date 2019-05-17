@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        android:id="@+id/head_include"
+        layout="@layout/include_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@+id/head_include"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgr"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/arrow_right"
+            fresco:placeholderImageScaleType="centerInside"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/user_shop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="10px"
+            android:text="餐饮"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/use_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="60px"
+
+            android:drawableLeft="@mipmap/head_cus"
+            android:drawablePadding="9px"
+            android:text="张小饭"
+
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/phone_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/use_name"
+            android:layout_marginLeft="120px"
+
+            android:layout_toRightOf="@+id/use_name"
+            android:drawableLeft="@mipmap/head_phone"
+            android:drawablePadding="9px"
+            android:text="18627916596"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/user_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="100px"
+
+            android:drawableLeft="@mipmap/head_address"
+            android:drawablePadding="9px"
+            android:text="湖北省武汉市"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_below="@+id/real"
+        android:background="@color/blue_head"
+        android:orientation="horizontal"
+        android:paddingBottom="5px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="4px">
+
+        <RadioButton
+            android:id="@+id/lkcg_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/head_select_cus_datil"
+            android:button="@null"
+
+            android:checked="true"
+            android:gravity="center"
+            android:text="123\n累积采购"
+            android:textColor="@color/white"
+            android:textSize="22px" />
+
+        <RadioButton
+            android:id="@+id/sycg_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/head_select_cus_datil"
+            android:button="@null"
+
+            android:gravity="center"
+            android:text="123\n上月采购"
+            android:textColor="@color/white"
+
+            android:textSize="22px" />
+
+        <RadioButton
+            android:id="@+id/bycg_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/head_select_cus_datil"
+            android:button="@null"
+            android:gravity="center"
+
+            android:text="123\n本月采购"
+            android:textColor="@color/white"
+            android:textSize="22px" />
+
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_radiogroup" />
+</RelativeLayout>

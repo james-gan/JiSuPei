@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/fu_daiwei"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+        <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textColor="@color/blue_head"-->
+
+            <!--android:text="￥" />-->
+
+        <EditText
+            android:id="@+id/num_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入数量"
+            android:textColorHint="#999999"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:maxLength="11"
+            android:layout_toRightOf="@+id/fu_daiwei"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

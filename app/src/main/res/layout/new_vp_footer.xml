@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/light_white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/zhifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+
+        >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="支付方式"
+               android:layout_marginLeft="10dp"
+               />
+        <TextView
+            android:id="@+id/sizaixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线支付"
+            android:textColor="@color/blue_head"
+            android:layout_toLeftOf="@+id/in1"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/in1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sub_select"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f1f1f1"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/dikou_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券抵扣"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/dikou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不可用"
+            android:textColor="@color/blue_head"
+            android:layout_toLeftOf="@+id/in2"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/in2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sub_select"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f1f1f1"
+        ></View>
+    <RelativeLayout
+        android:id="@+id/yhj_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/miaoshu1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还差"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/cha_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="138元"
+            android:textColor="@color/blue_head"
+            android:layout_toRightOf="@+id/miaoshu1_1"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/miaoshu1_1"
+            />
+        <TextView
+            android:id="@+id/coudan1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="就可以使用优惠券，"
+
+            android:layout_alignTop="@+id/miaoshu1_1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cha_money"
+
+            />
+        <TextView
+            android:id="@+id/coudan1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去凑单"
+            android:textColor="@color/blue_head"
+            android:layout_toRightOf="@+id/coudan1_3"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/coudan1_3"
+            />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sub_select"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yhj_has"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/miaoshu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您可以使用更多优惠券，"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/qulinqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去领取"
+            android:textColor="@color/blue_head"
+            android:layout_toRightOf="@+id/miaoshu2"
+            android:layout_alignTop="@+id/miaoshu2"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sub_select"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家留言"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+                android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+                android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+                    android:layout_marginRight="30dp"
+            android:hint="请输入留言/备注信息(选填)"
+            android:textSize="13sp"
+            />
+
+
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:background="#f1f1f1"
+    ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品总额"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/orange_head"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f1f1f1"
+        ></View>
+    <RelativeLayout
+
+    android:id="@+id/yhj_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/YhjMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-120.00"
+            android:textColor="@color/orange_head"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f1f1f1"
+        ></View>
+ <!--<View-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="20dp"-->
+     <!--android:background="@color/light_white"-->
+     <!--&gt;</View>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="#F2F2F2"-->
+        <!--&gt;</View>-->
+    <!--<LinearLayout android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+
+        <!--android:background="@android:color/white"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+
+       <!--<EditText-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:background="@drawable/light_grey_circle_bg"-->
+           <!--android:layout_height="120dp"-->
+           <!--android:gravity="top"-->
+           <!--android:id="@id/edit"-->
+           <!--android:paddingTop="5dp"-->
+           <!--android:paddingRight="5dp"-->
+           <!--android:paddingLeft="5dp"-->
+           <!--android:textSize="12dp"-->
+           <!--android:hint="留言/备注"-->
+           <!--android:textColorHint="#c6c6cc"-->
+           <!--android:maxLength="60"-->
+           <!--/>-->
+
+     <!--</LinearLayout>-->
+
+
+</LinearLayout>

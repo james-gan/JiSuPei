@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/ll"
+
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <!--分类的选择-->
+        <LinearLayout
+            android:id="@+id/flsesion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fl"
+            android:orientation="horizontal">
+            <com.jingchen.pulltorefresh.PullableListView
+                android:id="@+id/relListView2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:visibility="invisible"
+                android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+            <com.jingchen.pulltorefresh.PullableListView
+                android:id="@+id/relListView3"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxHeight="30dp"
+                android:background="@color/white"
+                android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

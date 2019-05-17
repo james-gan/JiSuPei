@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="@color/white"
+        android:layout_height="104px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_bt"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="20px"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#666"
+            android:text="异常管理"
+            android:id="@+id/textView"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+
+    <TextView
+       android:layout_width="match_parent"
+      android:layout_height="2px"
+      android:textColor="#666666"
+        />
+
+
+
+    <TextView
+        android:id="@+id/order_code_tv"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:paddingLeft="30px"
+        android:text="运单编号：--------"
+        android:gravity="center_vertical"
+        android:textSize="30px"
+        android:drawableLeft="@mipmap/wldh"
+        android:drawablePadding="10px"
+        android:background="@color/white"
+        />
+    <com.jingchen.pulltorefresh.PullableListView
+        android:background="@color/white"
+        android:id="@+id/hd_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+          android:divider="@null"
+        >
+    </com.jingchen.pulltorefresh.PullableListView>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="88px"-->
+        <!--android:text="确认上传"-->
+        <!--android:textSize="30px"-->
+        <!--android:background="@color/blue_head"-->
+        <!--android:textColor="@color/white"-->
+
+        <!--/>-->
+
+</LinearLayout>

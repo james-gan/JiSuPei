@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--<include-->
+        <!--android:id="@+id/head_include"-->
+        <!--layout="@layout/include_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="购物车"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d1cdcd"></View>
+    </RelativeLayout>
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/light_white">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView_swipe
+            android:id="@+id/id_stickynavlayout_innerscrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/view"
+            android:layout_below="@+id/search_top3"
+            android:cacheColorHint="@color/white"
+            android:divider="@color/transparent"
+
+            android:dividerHeight="0dip"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:smoothScrollbar="true"
+            android:background="#f1f1f1"
+
+            />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+    <TextView
+android:visibility="gone"
+        android:id="@+id/empty"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="购物车暂时没有数据"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d1cdcd"
+        android:layout_above="@+id/bottom_ll"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/quanxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_marginLeft="10dp"
+
+            android:button="@drawable/newvp_select_check"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:layout_marginLeft="20dp"
+
+            />
+        <TextView
+            android:id="@+id/count_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/orange_head"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="件"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:id="@+id/count_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="￥0.00"
+            android:textColor="@color/orange_head"
+            />
+        <Button
+            android:id="@+id/sumint_bt"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="提交订单"
+            android:background="@color/blue_head"
+
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

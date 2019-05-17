@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+      <TextView
+          android:id="@+id/sp_name_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40px"
+          android:text="越南巴沙鱼"
+          android:layout_marginLeft="40px"
+          android:textSize="30px"
+          />
+        <TextView
+            android:id="@+id/sp_guig_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/sp_name_tv"
+           android:layout_alignTop="@+id/sp_name_tv"
+            android:text="1*500g"
+            android:textSize="30px"
+            android:layout_marginLeft="20px"
+            />
+
+
+        <TextView
+            android:id="@+id/daishou_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收:100件10袋"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36px"
+            android:layout_marginLeft="40px"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_alignTop="@+id/daishou_num_tv"
+            android:layout_toRightOf="@+id/daishou_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收："
+            android:layout_marginLeft="20px"
+            android:textSize="30px"
+            />
+
+
+        <TextView
+            android:id="@+id/jian"
+            android:layout_alignTop="@+id/txt1"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 100 "
+            android:background="#EDEEEE"
+            android:textSize="30px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:layout_marginTop="-10px"
+            />
+        <TextView
+            android:id="@+id/jian_danwei"
+            android:layout_alignTop="@+id/jian"
+            android:layout_toRightOf="@+id/jian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="件"
+    android:layout_marginTop="10px"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/dai_num"
+            android:layout_alignTop="@+id/txt1"
+            android:layout_toRightOf="@+id/jian_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 100 "
+            android:background="#EDEEEE"
+            android:textSize="30px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:layout_marginTop="-10px"
+            />
+        <TextView
+            android:id="@+id/dai_danwei"
+            android:layout_alignTop="@+id/dai_num"
+            android:layout_toRightOf="@+id/dai_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="袋"
+            android:textSize="30px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:layout_marginTop="10px"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/shisou_num_tv"-->
+            <!--android:layout_alignTop="@+id/daishou_num_tv"-->
+            <!--android:layout_toRightOf="@+id/daishou_num_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="实收:100件10袋"-->
+            <!--android:layout_marginLeft="20px"-->
+            <!--android:textSize="30px"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/order_staue"-->
+            <!--android:layout_width="20px"-->
+            <!--android:layout_height="20px"-->
+            <!--android:layout_marginRight="40px"-->
+         <!--android:layout_centerVertical="true"-->
+         <!--android:layout_alignParentRight="true"-->
+            <!--android:textSize="30px"-->
+            <!--android:background="@drawable/circle_bg2"-->
+            <!--/>-->
+        <CheckBox
+            android:id="@+id/checkbox_Button1"
+            android:layout_width="39px"
+            android:layout_height="39px"
+            android:layout_marginRight="40px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+           android:background="@drawable/select_checkbox"
+          android:button="@null"
+          />
+        <!--android:background="@drawable/select_checkbox"-->
+        <!--android:button="@null"-->
+        <!--<TextView-->
+            <!--android:id="@+id/pos_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:text="1、"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="30px"-->
+            <!--android:textSize="30px"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/orderdetail_tv"-->
+            <!--android:layout_width="150px"-->
+            <!--android:layout_height="60px"-->
+            <!--android:gravity="center"-->
+            <!--android:text="查看详情"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@drawable/yellow_bg4"-->
+            <!--android:textColor="@color/yellow"-->
+            <!--android:layout_marginBottom="36px"-->
+            <!--android:layout_marginRight="20px"-->
+            <!--android:textSize="30px"-->
+            <!--/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+
+            android:text="1、"
+
+            android:layout_marginLeft="30px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

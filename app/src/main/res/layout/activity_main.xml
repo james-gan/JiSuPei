@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--顶部          -->
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+
+          >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/grzxbig"
+                android:text="成都高新店"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image1">
+
+                <TextView
+                    android:id="@+id/shop_name_tv_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="餐饮连锁"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/name_meidian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name_tv_index"
+                    android:layout_marginLeft="10dp"
+                    android:text="成都高新店"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/tupian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/xiaoxi"
+                android:src="@mipmap/youtu"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/xiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/newxiaoxi"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+<!--第2个-->
+        <RelativeLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+        >
+
+            <RelativeLayout
+                android:id="@+id/left_grzx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/grzxbig_smal"
+                    android:text="成都高新店"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/grzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="个人中心"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tupian2"
+                android:layout_toRightOf="@+id/left_grzx"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入身材名称/关键字搜索"
+                    android:textColor="#666666" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tupian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/xiaoxi2"
+                android:src="@mipmap/youtu"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/xiaoxi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/newxiaoxi"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--顶部end          -->
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_cart_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/shopping_cart_total_price_left_magrin"
+            android:text="120"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopping_cart_total_price_word_size"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:layout_below="@+id/top">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue_head"
+                android:minHeight="1px"
+                app:contentInsetStart="0dp"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="输入身材名称/关键字搜索"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/main_ll"
+
+            android:layout_height="match_parent"
+            android:layout_above="@+id/shopping_cart_bottom"
+            android:layout_below="@+id/appbar"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/left_menu"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/right_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"></android.support.v7.widget.RecyclerView>
+
+                <include layout="@layout/right_menu_item" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shopping_cart_bottom_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/circle">
+
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="@dimen/shopping_cart_image_height"
+            android:layout_height="@dimen/shopping_cart_image_height"
+            android:layout_gravity="center"
+            android:src="@mipmap/add" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/shopping_cart_total_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shopping_cart_bottom"
+        android:layout_alignRight="@id/shopping_cart_layout"
+        android:background="@drawable/small_red_circle"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!--<com.jscheng.elemeapplication.Wiget.FakeAddImageView-->
+    <!--android:id="@+id/right_dish_fake_add"-->
+    <!--android:layout_width="@dimen/item_dish_circle_size"-->
+    <!--android:layout_height="@dimen/item_dish_circle_size"-->
+    <!--android:clickable="true"-->
+    <!--android:visibility="gone"-->
+    <!--android:src="@drawable/ic_add_circle_blue_700_36dp" />-->
+</RelativeLayout>

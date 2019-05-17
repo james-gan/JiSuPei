@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="上传回单"
+            android:textColor="#666"
+            android:textSize="32px"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="38px"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/good_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/line"
+            android:text="添加图片:"
+            android:textColor="@android:color/black"
+            android:textSize="35px" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/delete"-->
+        <!--android:layout_width="35px"-->
+        <!--android:layout_height="34px"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="30px"-->
+        <!--android:background="@mipmap/bottom_close"-->
+        <!--/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical"
+
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/add1_iv"
+                    android:layout_width="160px"
+                    android:layout_height="wrap_content"
+
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:placeholderImage="@mipmap/add_image_wuliu"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarImage="@mipmap/load"
+                    fresco:progressBarImageScaleType="fitXY"
+                    fresco:roundedCornerRadius="4dp"
+                    fresco:viewAspectRatio="1"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+
+                    android:text="上传回执单"
+                    android:textColor="#666666"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+
+                android:layout_marginRight="50px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/add2_iv"
+                    android:layout_width="160px"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add_image_wuliu"
+
+                    fresco:actualImageScaleType="fitXY"
+
+
+                    fresco:placeholderImage="@mipmap/add_image_wuliu"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarImage="@mipmap/load"
+                    fresco:progressBarImageScaleType="fitXY"
+
+                    fresco:roundedCornerRadius="4dp"
+
+                    fresco:viewAspectRatio="1"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15px"
+                    android:text="上传货品照片"
+                    android:textColor="#666666"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/add3_iv"
+                    android:layout_width="160px"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add_image_wuliu"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:placeholderImage="@mipmap/add_image_wuliu"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarImage="@mipmap/load"
+                    fresco:progressBarImageScaleType="fitXY"
+
+                    fresco:roundedCornerRadius="4dp"
+
+                    fresco:viewAspectRatio="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15px"
+                    android:text="上传货品照片"
+                    android:textColor="#666666"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add1_iv_del"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_marginLeft="202px"
+            android:src="@mipmap/close_red" />
+
+        <ImageView
+            android:id="@+id/add2_iv_del"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_marginLeft="412px"
+            android:src="@mipmap/close_red" />
+
+        <ImageView
+            android:id="@+id/add3_iv_del"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="67px"
+            android:src="@mipmap/close_red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="54px"
+        android:paddingTop="30px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/add4_iv"
+                    android:layout_width="160px"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add_image_wuliu"
+
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:placeholderImage="@mipmap/add_image_wuliu"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarImage="@mipmap/load"
+                    fresco:progressBarImageScaleType="fitXY"
+
+                    fresco:roundedCornerRadius="4dp"
+
+                    fresco:viewAspectRatio="1"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15px"
+                    android:text="上传货品照片"
+                    android:textColor="#666666"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="40px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/add5_iv"
+                    android:layout_width="160px"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add_image_wuliu"
+                    fresco:actualImageScaleType="fitXY"
+
+                    fresco:placeholderImage="@mipmap/add_image_wuliu"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:progressBarImage="@mipmap/load"
+                    fresco:progressBarImageScaleType="fitXY"
+                    fresco:roundedCornerRadius="4dp"
+                    fresco:viewAspectRatio="1"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:text="上传货品照片"
+                    android:textColor="#666666"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add4_iv_del"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_marginLeft="202px"
+
+            android:src="@mipmap/close_red" />
+
+        <ImageView
+            android:id="@+id/add5_iv_del"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="272px"
+            android:src="@mipmap/close_red" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="680px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+        android:padding="24px"
+        android:text="确认上传"
+        android:textColor="@android:color/white"
+        android:textSize="40px" />
+
+
+</LinearLayout>

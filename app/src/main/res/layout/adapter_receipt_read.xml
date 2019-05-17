@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/grr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30px"
+                android:text="运单编号：5545441"
+                android:textColor="#666666"
+                android:drawableLeft="@mipmap/wldh"
+                android:drawablePadding="14px"
+                android:textSize="31px"
+                />
+            <TextView
+                android:id="@+id/schd"
+                android:layout_width="132px"
+                android:layout_height="49px"
+                android:gravity="center"
+                android:textSize="28px"
+                android:background="@drawable/shape_order_blue"
+                android:text="上传回单"
+                android:textColor="@color/white"
+                android:layout_marginRight="31px"
+
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#DDDDDD"
+
+            ></View>
+<!--图片的ll-->
+        <LinearLayout
+
+            android:id="@+id/hd_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="30px"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image1"
+                android:layout_width="121px"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/huizhidan"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/error_new"
+                fresco:placeholderImage="@mipmap/huizhidan"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/load"
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1"
+                />
+            <TextView
+                android:id="@+id/image1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回执单"
+                android:layout_marginTop="5px"
+                android:textColor="#666666"
+                android:textSize="23px"
+
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="20px"
+                >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image2"
+                android:layout_width="121px"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/huizhidan"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/error_new"
+                fresco:placeholderImage="@mipmap/huizhidan"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/load"
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1" />
+                <TextView
+                    android:id="@+id/image2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品照片"
+                    android:layout_marginTop="5px"
+                    android:textColor="#666666"
+                    android:textSize="23px"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="20px"
+                >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image3"
+                android:layout_width="121px"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/huizhidan"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/error_new"
+                fresco:placeholderImage="@mipmap/huizhidan"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/load"
+
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1" />
+                <TextView
+                    android:id="@+id/image3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品照片"
+                    android:layout_marginTop="5px"
+                    android:textColor="#666666"
+                    android:textSize="23px"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="20px"
+                >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image4"
+                android:layout_width="121px"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/huizhidan"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/error_new"
+                fresco:placeholderImage="@mipmap/huizhidan"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/load"
+
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1" />
+                <TextView
+                    android:id="@+id/image4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品照片"
+                    android:layout_marginTop="5px"
+                    android:textColor="#666666"
+                    android:textSize="23px"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="20px"
+                >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image5"
+                android:layout_width="121px"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/huizhidan"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/error_new"
+                fresco:placeholderImage="@mipmap/huizhidan"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/load"
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1" />
+                <TextView
+                    android:id="@+id/image5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品照片"
+                    android:layout_marginTop="5px"
+                    android:textColor="#666666"
+                    android:textSize="23px"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+<!--end图片的ll-->
+    </LinearLayout>
+</LinearLayout>

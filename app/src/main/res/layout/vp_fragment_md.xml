@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_top3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/top"
+        android:background="@color/blue_head"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:gravity="center"
+        android:paddingTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门店"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <!--<com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/pullToRefreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/search_top3"-->
+        <!--android:background="@color/light_white">-->
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/relListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_below="@+id/search_top3"
+            android:background="@color/white"
+            android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+    <!--</com.jingchen.pulltorefresh.PullToRefreshLayout>-->
+
+
+
+
+</RelativeLayout>

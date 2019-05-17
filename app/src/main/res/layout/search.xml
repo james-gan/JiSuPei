@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/search_badge"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@color/yellow1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:background="@drawable/white_circle1"
+            android:layout_toRightOf="@+id/back_bt"
+            android:layout_toLeftOf="@+id/mine"
+            android:singleLine="true"
+            android:drawableLeft="@mipmap/serch_index"
+            android:paddingLeft="8dp"
+            android:layout_margin="5dp"
+            android:hint="输入食材名称/关键字搜索"
+            android:textSize="15dp"
+            android:textColor="@color/light_black"
+            android:paddingRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/mine"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/message_point"/>-->
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/search_badge"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:id="@+id/page_tab_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:background="@android:color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dip"
+        android:visibility="invisible"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/hot_layout"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_below="@+id/search_badge"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="热门搜索"
+            android:id="@+id/title"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <TextView
+             android:text="牛肉"
+             android:background="@drawable/white_circle2"
+             android:gravity="center"
+             android:paddingLeft="15dp"
+             android:layout_margin="5dp"
+             android:id="@+id/hot_text1"
+             android:textSize="15dp"
+             android:paddingRight="15dp"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="猪肉"
+                android:id="@+id/hot_text2"
+                android:background="@drawable/white_circle2"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="糕点"
+                android:background="@drawable/white_circle2"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/hot_text3"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="海鲜"
+                android:id="@+id/hot_text4"
+                android:background="@drawable/white_circle2"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+     </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/cart_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@mipmap/bottom_bg"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cart_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:src="@mipmap/cart_index"/>-->
+
+        <!--<TextView android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_toRightOf="@+id/cart_image"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="8"-->
+            <!--android:id="@+id/cart_num"-->
+            <!--android:visibility="invisible"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="12dp"-->
+            <!--android:background="@drawable/red_circle_bg"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/cart_num"-->
+            <!--/>-->
+        <!--<RelativeLayout android:layout_width="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView android:id="@+id/cart_num_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="添加购物车"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:id="@+id/submit_bt"-->
+                <!--android:layout_width="110dp"-->
+                <!--android:background="@color/yellow111"-->
+                <!--android:text="提交"-->
+                <!--android:visibility="invisible"-->
+                <!--android:padding="15dp"-->
+                <!--android:textSize="16dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_height="wrap_content"/>-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_cart_height"
+        android:layout_alignParentBottom="true"
+        android:background="#192F4A"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_total_tv_price"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/shopping_cart_total_price_left_magrin"
+            android:text="120"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopping_cart_total_price_word_size"
+            android:textStyle="bold" />
+        <Button
+            android:layout_gravity="right"
+            android:id="@+id/submit_bt"
+            android:layout_width="110dp"
+            android:background="@color/yellow111"
+            android:text="提交订单"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--圆圈-->
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/circle"
+        android:layout_above="@+id/view_flag"
+        >
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="@dimen/shopping_cart_image_height"
+            android:layout_height="@dimen/shopping_cart_image_height"
+            android:layout_gravity="center"
+            android:src="@mipmap/gouwu1" />
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="right"
+            android:background="@drawable/shape_homepage_orang"
+            android:gravity="center"
+            android:text="81"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

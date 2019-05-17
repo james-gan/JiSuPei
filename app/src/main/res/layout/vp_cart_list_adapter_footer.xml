@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="80dp"
+    android:layout_height="70dp"
+    android:background="@color/blue_head"
+>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+            android:background="@color/red"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="更多" />
+    </RelativeLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#dddddd"-->
+
+    <!--&gt;</View>-->
+</LinearLayout>

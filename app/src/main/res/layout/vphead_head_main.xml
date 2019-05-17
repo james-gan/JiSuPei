@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <!--android:fitsSystemWindows="true" -->
+    <!--android:clipToPadding ="true"-->
+    <com.jisupei.ywy.widget.NoScrollViewPager
+        android:id="@+id/main_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_view"
+        >
+    </com.jisupei.ywy.widget.NoScrollViewPager>
+    <View
+        android:id="@+id/div_view"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/main_radiogroup"
+
+        android:background="#ffc9cacb" />
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RadioButton
+            android:id="@+id/index_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/head_select_order1"
+            android:text="首页"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/kehu_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/head_select_order1"
+            android:text="客户"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/order_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/head_select_order1"
+            android:text="订单"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/seting_rb"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/head_select_seting"
+            android:gravity="center"
+            android:text="货品"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/search_badge"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@color/yellow1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:background="@drawable/white_circle1"
+            android:layout_toRightOf="@+id/back_bt"
+            android:layout_toLeftOf="@+id/mine"
+            android:singleLine="true"
+            android:drawableLeft="@mipmap/serch_index"
+            android:paddingLeft="8dp"
+            android:layout_margin="5dp"
+            android:hint="输入商品名称/订单号"
+            android:textSize="30px"
+            android:textColor="@color/light_black"
+            android:paddingRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/mine"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/message_point"/>-->
+    </RelativeLayout>
+
+    <!--<ListView-->
+
+        <!--android:layout_below="@+id/search_badge"-->
+        <!--android:layout_above="@+id/cart_layout"-->
+        <!--android:id="@+id/page_tab_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:cacheColorHint="@color/white"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:divider="@color/transparent"-->
+        <!--android:dividerHeight="0dip"-->
+
+        <!--android:fadingEdge="none"-->
+        <!--android:fastScrollEnabled="false"-->
+        <!--android:listSelector="@color/transparent"-->
+        <!--/>-->
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/page_tab_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_badge"
+        android:background="@color/light_white" >
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="@color/light_white"
+            android:dividerHeight="12dp"
+            />
+
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="26px"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="订单管理"
+            android:textColor="#666"
+            android:textSize="32px" />
+        <ImageView
+            android:layout_width="52px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/search"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/search_iv"
+            android:layout_height="52px"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/eLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/white"
+        android:layout_height="100px">
+        <TextView
+            android:id="@+id/quanbu_tv"
+            android:layout_width="358px"
+            android:layout_height="match_parent"
+            android:text="全部订单"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="35px"
+            android:textColor="@color/light_black"
+            />
+        <TextView
+            android:id="@+id/hengxian_tv1"
+            android:layout_width="150px"
+            android:layout_height="4px"
+            android:background="@color/yellow"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="35px"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="104px"
+            />
+        <TextView
+            android:id="@+id/feni_tv"
+            android:layout_width="2px"
+            android:layout_height="70px"
+            android:layout_toRightOf="@+id/quanbu_tv"
+       android:background="@color/grey1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/fenlei_tv"
+            android:layout_width="358px"
+            android:layout_height="match_parent"
+            android:text="分类订单"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/feni_tv"
+            android:gravity="center"
+            android:textSize="35px"
+            android:textColor="@color/light_black"
+            />
+        <TextView
+            android:id="@+id/hengxian_tv2"
+            android:layout_width="150px"
+            android:layout_height="4px"
+            android:background="@color/yellow"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="35px"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="104px"
+            />
+        <ImageView
+            android:id="@+id/hengxian_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/bottom_button"
+            android:layout_marginRight="80px"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+    <!--<ListView-->
+
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/eLayout"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="12dp"-->
+        <!--android:layout_marginTop="10px"-->
+
+        <!--/>-->
+    <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/eLayout"
+        android:layout_marginTop="10px"
+        android:background="@color/light_white" >
+
+    <com.jingchen.pulltorefresh.PullableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@color/light_white"
+        android:dividerHeight="12dp"
+        />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/eLayout"
+        android:layout_marginTop="10px"
+        android:background="@color/light_white" >
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="@color/light_white"
+            android:dividerHeight="12dp"
+   />
+
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+</RelativeLayout>

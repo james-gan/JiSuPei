@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="100px">
+
+    <ImageView
+android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长沙点"
+      android:src="@mipmap/dp"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="13px"
+        android:textColor="#333333"
+        android:textSize="30px"
+
+        />
+     <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长沙点"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_marginLeft="10px"
+         android:layout_marginTop="10px"
+        android:textColor="#333333"
+         android:textSize="30px"
+
+
+        />
+    <TextView
+        android:id="@+id/grr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运单编号：122213213213"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="5px"
+        android:textColor="#999999"
+        android:textSize="27px"
+        android:layout_below="@+id/shop_name"
+        />
+
+</RelativeLayout>
+    <com.jisupei.utils.widget.NoScrollListView
+        android:id="@+id/no_scrollListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </com.jisupei.utils.widget.NoScrollListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/left_grzx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/wz"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grzx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="武汉"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/xiaoxi2_ll"
+            android:layout_toRightOf="@+id/left_grzx"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:text="输入食材名称/关键字搜索"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--消息-->
+        <LinearLayout
+            android:id="@+id/xiaoxi2_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/xiaoxi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_message"
+                android:text="成都高新店"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_white">
+
+        <com.jingchen.pulltorefresh.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_white">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:id="@+id/auto_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/point_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d1cdcd"></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wm_ck"
+                        android:background="@android:color/white"
+
+                        android:listSelector="@android:color/transparent"
+                        android:paddingRight="10dp"
+
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d1cdcd"></View>
+                <LinearLayout
+                    android:id="@+id/cart_list_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@android:color/white"
+                    >
+
+                    <com.jingchen.pulltorefresh.PullableRecyclerView
+                        android:id="@+id/cart_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wm_ck"
+                        android:background="@android:color/white"
+
+                        android:listSelector="@android:color/transparent"
+                        android:paddingRight="10dp"
+
+                        android:scrollbars="none" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tuijian_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fe4a65"
+                    android:paddingTop="10dp"
+                    android:text="推荐购买"
+                    android:background="#F1F1F1"
+                    android:paddingLeft="10dp"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <com.jingchen.pulltorefresh.PullableRecyclerView
+                        android:id="@+id/id_stickynavlayout_innerscrollview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="2dp"
+                        android:cacheColorHint="@color/white"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="0dip"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/transparent"
+                        android:smoothScrollbar="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tuijian_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:background="@drawable/vpnmew_shape_index_more"
+                        android:layout_gravity="center"
+                        android:textColor="#fe4a65"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="加载更多" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+
+                    android:paddingTop="10dp"
+                    android:text="特价专区"
+                    android:textColor="#fe4a65"
+                    android:background="#F1F1F1"
+                    android:paddingLeft="10dp"
+                    >
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <com.jingchen.pulltorefresh.PullableRecyclerView
+                        android:id="@+id/id_stickynavlayout_innerscrollview2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="2dp"
+                        android:cacheColorHint="@color/white"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="0dip"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/transparent"
+                        android:smoothScrollbar="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tj_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:background="@drawable/vpnmew_shape_index_more"
+                        android:layout_gravity="center"
+                        android:textColor="#fe4a65"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="加载更多" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.jingchen.pulltorefresh.PullableScrollView>
+        <!--<com.jingchen.pulltorefresh.PullableRecyclerView-->
+
+        <!--android:id="@+id/id_stickynavlayout_innerscrollview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:cacheColorHint="@color/white"-->
+        <!--android:divider="@color/transparent"-->
+        <!--android:dividerHeight="0dip"-->
+
+        <!--android:fastScrollEnabled="false"-->
+        <!--android:listSelector="@color/transparent"-->
+        <!--android:smoothScrollbar="true"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--/>-->
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:background="@drawable/shape_confirm_dialog"
+            android:paddingBottom="50px"
+
+
+            >
+
+            <!--标题-->
+            <LinearLayout
+                android:id="@+id/confim_text_ll"
+                android:layout_width="match_parent"
+                android:layout_height="205px"
+                android:background="@drawable/shape_confirm_dialog_top">
+
+
+                <TextView
+                    android:id="@+id/confim_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="110px"
+                    android:text="倒萨多萨达撒爱上爱上爱上爱上撒啊啊啊啊啊啊倒萨大苏打阿萨德撒倒萨撒撒十大撒旦阿斯达啊"
+                    android:textColor="#1A5ED3"
+
+                    android:textSize="24px" />
+
+            </LinearLayout>
+
+
+            <!--Listview标题-->
+            <RelativeLayout
+                android:id="@+id/flag"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_below="@+id/confim_text_ll"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#DDDDDD">
+
+                <TextView
+                    android:id="@+id/confim_text_orderCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+
+                    android:text="发货仓库/待合并订单"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/confim_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/confim_text_zl"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="100px"
+                    android:text="下单时间"
+
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/confim_text_zl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:text="采购品类"
+                    android:textSize="24px" />
+
+            </RelativeLayout>
+
+            <!--数据-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200px"-->
+                <!--android:layout_below="@+id/flag"-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:layout_marginRight="20px"-->
+                <!--android:background="#FBFBFB">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/confim_text_orderCode_data"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:text="倒萨上"-->
+                    <!--android:textSize="28px" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/confim_text_time_data"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:text="2016"-->
+                    <!--android:textSize="28px" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/confim_text_zl_data"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:text="倒萨上"-->
+                    <!--android:textSize="28px" />-->
+
+            <!--</RelativeLayout>-->
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_below="@+id/flag"
+                android:layout_height="200px">
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listView"
+                android:layout_marginTop="40px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/cancel"
+                    android:layout_width="210px"
+
+                    android:layout_height="80px"
+                    android:background="@drawable/canal_bg"
+                    android:text="取消合并"
+                    android:textColor="#666666"
+                    android:textSize="30px"
+
+                    />
+
+                <Button
+
+                    android:id="@+id/confirm"
+                    android:layout_width="210px"
+
+                    android:layout_height="80px"
+
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/yellow_bg"
+                    android:text="确认合并"
+                    android:textColor="@android:color/white"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--   温馨提示-->
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="269px"
+            android:layout_height="169px"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/confirm" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/light_white"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:background="@mipmap/my_background"
+        android:layout_height="460px"
+        >
+        <LinearLayout
+            android:id="@+id/img_layout"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:padding="4dp"
+            >
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_iv"
+                android:layout_centerInParent="true"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                fresco:actualImageScaleType="fitXY"
+                fresco:placeholderImage="@mipmap/photo"
+                fresco:failureImage="@mipmap/photo"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:progressBarImage="@mipmap/photo"
+                fresco:progressBarImageScaleType="fitXY"
+                fresco:roundedCornerRadius="4dp"
+                fresco:viewAspectRatio="1"
+                fresco:roundAsCircle="true"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="武汉菱角湖万达广场分店"
+            android:layout_marginTop="30px"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/shop_name"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_layout"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="管理"
+            android:id="@+id/manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/setting"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:drawablePadding="8dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toLeftOf="@+id/img_layout"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/img_layout"
+            />
+        <ImageView
+            android:id="@+id/isUpate"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_marginLeft="-85px"
+            android:layout_toRightOf="@+id/manager"
+            android:layout_alignTop="@+id/manager"
+            android:src="@drawable/circle_bg_red"></ImageView>
+
+        <TextView
+            android:text="消息"
+            android:id="@+id/message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/message_point"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:drawablePadding="8dp"
+            android:layout_toRightOf="@+id/img_layout"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/img_layout"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20px"
+        android:paddingBottom="4px"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/layout1"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+              >
+
+            <TextView
+              android:text="待配送"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:textSize="13dp"
+                android:id="@+id/text1"
+                android:textColor="@color/light_black"
+                android:drawableTop="@mipmap/truck"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/num_bg1"
+                    android:layout_width="30dp"
+                    android:text="10"
+                    android:textSize="11dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:layout_height="15dp"
+                    android:background="@drawable/green_bg1"/>
+
+                 <View android:id="@+id/none_bg1"
+                        android:layout_width="50dp"
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:layout_height="2dp"
+                        android:background="@color/yellow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="1dp"
+            android:background="@color/light_grey1"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/layout2"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:text="待签收"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:textSize="13dp"
+                android:id="@+id/text2"
+                android:textColor="@color/light_black"
+                android:drawableTop="@mipmap/sign"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/num_bg2"
+                    android:layout_width="30dp"
+                    android:text="10"
+                    android:textSize="11dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:layout_height="15dp"
+                    android:background="@drawable/green_bg1"/>
+
+                <View android:id="@+id/none_bg2"
+                    android:layout_width="50dp"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:layout_height="2dp"
+                    android:background="@color/yellow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            >
+          <TextView android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/light_black"
+                android:text="全部订单"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/text3"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/icon_01"
+              />
+
+            <View android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey1"/>
+
+            <TextView
+                android:id="@+id/tongji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:drawablePadding="2dp"
+                android:textSize="13dp"
+                android:textColor="@color/light_black"
+                android:text="统计结算"
+                android:drawableTop="@mipmap/icon_02"
+                />
+
+            <View android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey1"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/collect_text"
+                android:textSize="13dp"
+                android:drawablePadding="2dp"
+                android:textColor="@color/light_black"
+                android:text="个人收藏"
+                android:drawableTop="@mipmap/icon_03"
+                />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <TextView android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/light_black"
+                android:text="我的消息"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/message2"
+                android:textSize="13dp"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/icon_04"
+                />
+
+            <View android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey1"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawablePadding="2dp"
+                android:textSize="13dp"
+                android:id="@+id/about"
+                android:textColor="@color/light_black"
+                android:text="关于我们"
+                android:drawableTop="@mipmap/icon_05"
+                />
+
+            <View android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey1"/>
+
+            <TextView
+                android:id="@+id/LeaveMsgActivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="13dp"
+                android:drawablePadding="2dp"
+                android:textColor="@color/light_black"
+                android:text="我要留言"
+                android:drawableTop="@mipmap/icon_06"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_layout"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:layout_height="90px">
+
+        <View android:layout_width="60dp"
+            android:background="@color/light_grey1"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/yellow1"
+            android:text="返回首页"/>
+
+        <View android:layout_width="60dp"
+            android:background="@color/light_grey1"
+            android:layout_toRightOf="@+id/style_text"
+            android:layout_height="1dp"/>
+
+     </LinearLayout>
+
+</RelativeLayout>

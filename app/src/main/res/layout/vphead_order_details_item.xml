@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+
+        android:background="#f1f1f1">
+
+        <RelativeLayout
+            android:id="@+id/img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/error" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_rl"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_rl"
+            android:background="?android:attr/selectableItemBackground"
+            android:singleLine="true"
+            android:text="越南巴沙鱼片"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/peice_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/name_text"
+            android:layout_marginRight="15dp"
+            android:text="100.00"
+            android:textColor="@color/orange_head"
+            android:textSize="14sp"
+
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/shifa_text"
+            android:layout_alignLeft="@+id/shifa_text"
+
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/sl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="11袋"
+                android:textColor="@color/blue_head"
+                android:textSize="14sp"
+
+
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/sl_zp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignTop="@+id/LinearLayout"-->
+                <!--android:layout_toRightOf="@+id/LinearLayout"-->
+                <!--android:gravity="center"-->
+                <!--android:text="11袋"-->
+                <!--android:textColor="@color/blue_head"-->
+                <!--android:textSize="14sp" />-->
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/guige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_text"
+            android:layout_below="@+id/name_text"
+            android:layout_marginTop="1dp"
+            android:text="equation_factor"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/shifa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:text="实发100"
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/shishou_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/shifa_text"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/shifa_text"
+            android:text="实发100"
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rl"
+        android:background="@color/white"></View>
+</RelativeLayout>

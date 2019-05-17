@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="越南巴沙鱼片"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="规格:1*500g*20袋"/>
+    <TextView
+        android:id="@+id/equation_factor"
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+         android:layout_alignTop="@+id/rank"
+        android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/rank"
+        android:layout_marginLeft="8dp"
+        android:text="规格:1*500g*20袋"/>
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/rank"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text="发货数量:100件"/>
+
+</RelativeLayout>

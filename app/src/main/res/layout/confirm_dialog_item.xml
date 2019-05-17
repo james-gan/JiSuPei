@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/flag"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#FBFBFB">
+
+        <TextView
+            android:id="@+id/confim_text_orderCode_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="20px"
+            android:text="倒萨上"
+            android:textSize="24px"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            />
+
+        <TextView
+            android:id="@+id/confim_text_time_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/confim_text_zl_data"
+
+            android:layout_marginRight="130px"
+            android:text="---"
+
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/confim_text_zl_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="45px"
+            android:text="倒萨上"
+            android:textSize="24px"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:background="#DDDDDD"
+    android:layout_alignParentBottom="true"
+    />
+
+    </RelativeLayout>
+</LinearLayout>

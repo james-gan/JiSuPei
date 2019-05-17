@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#999999</color>
+    <color name="grey1">#98999A</color>
+    <!--<color name="yellow">#FF8446</color>-->
+    <color name="yellow">#318eff</color>
+
+    <color name="yellow111">#ff671d</color>
+    <color name="orange_head">#ff671d</color>
+    <color name="yellow11">#FD7625</color>
+    <color name="yellow1">#318eff</color>
+    <color name="blue_head">#318eff</color>
+    <color name="light_grey">#F2F2F2</color>
+    <color name="light_grey1">#DADADA</color>
+    <color name="light_yellow">#FFF2EA</color>
+    <color name="light_yellow2">#FFDBC9</color>
+    <color name="light_black">#665C57</color>
+    <color name="light_white">#F4F5F6</color>
+    <color name="light_white1">#D3D4D4</color>
+    <color name="light_white2">#D3D3D3</color>
+    <!--<color name="green">#83C456</color>-->
+    <color name="green">#f7aa20</color>
+    <color name="red">#FF462B</color>
+    <!--<color name="yellow_tj">#b2FD7625</color>-->
+    <color name="yellow_tj">#318eff</color>
+
+    <color name="yellow_tj1">#9dc7ff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="split_one_pixels">1px</dimen>
+    <dimen name="split_one_dip">1dp</dimen>
+    <dimen name="max_header_height">240dp</dimen>
+    <dimen name="header_offset_dis">200dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <color name="white">#ffffff</color>
+    <color name="color_gray_eaeaea">#eaeaea</color>
+    <color name="f1">#F1F1F1</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_black_d9d9d9">#d9d9d9</color>
+    <color name="color_purple_bd6aff">#FF8446</color>
+    <color name="GreyWhite_has_alpha">#66FAFAFA</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#66000000</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+
+</resources>

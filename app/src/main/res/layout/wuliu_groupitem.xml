@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/grr_cimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="物流单号：5545441"
+            android:textSize="30px"
+            android:textColor="#666666"
+            android:src="@mipmap/wldh"
+
+            />
+        <TextView
+            android:id="@+id/grr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10px"
+            android:text="物流单号：5545441"
+            android:textSize="30px"
+            android:textColor="#666666"
+
+            />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="30px"
+            android:text="41123"
+            android:textSize="30px"
+            android:textColor="#666666"
+            />
+        <ImageView
+            android:id="@+id/img_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/under_icon"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"
+        ></View>
+
+</LinearLayout>

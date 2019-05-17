@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:background="#F1F1F1"
+        android:paddingBottom="20px">
+
+        <TextView
+            android:id="@+id/sp_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="酱油"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/sp_guig_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_name_tv"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:text="规格：100 (1件13)"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/daifa_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_guig_tv"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="待发：50件13袋"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/shifa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/daifa_num"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/daifa_num"
+
+            android:text="实发：50件13袋"
+            android:textColor="@color/blue_head"
+            android:textSize="30px" />
+
+
+
+        <LinearLayout
+
+            android:id="@+id/exception_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daifa_num"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lx_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daifa_num"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/shape_order_blue_exception"
+
+                    android:gravity="center"
+
+                    android:text="货品解冻"
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+
+                    />
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/shape_order_blue_exception"
+                    android:gravity="center"
+
+                    android:text="货品解冻"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/shape_order_blue_exception"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:text="货品解冻"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </LinearLayout>
+            <!--图片-->
+            <LinearLayout
+                android:id="@+id/image_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daifa_num"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="116px"
+                    android:layout_height="116px"
+                    android:layout_marginLeft="30px"
+                    android:src="@mipmap/add_img" />
+                <ImageView
+                    android:layout_width="116px"
+                    android:layout_height="116px"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/add_img" />
+                <ImageView
+                    android:layout_width="116px"
+                    android:layout_height="116px"
+                    android:layout_marginLeft="20px"
+
+                    android:src="@mipmap/add_img" />
+
+            </LinearLayout>
+
+            <!--异常说名-->
+            <TextView
+                android:id="@+id/ycsm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:text="异常说明：123213213123"
+                android:textColor="@color/orange_head"
+                android:textSize="30px" />
+            <!--异常说名-->
+            <TextView
+                android:id="@+id/huifu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="5px"
+                android:text="回复：123213213123"
+                android:textColor="@color/blue_head"
+                android:textSize="30px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

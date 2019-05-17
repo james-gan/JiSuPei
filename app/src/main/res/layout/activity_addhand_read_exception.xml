@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="异常管理"
+            android:textColor="#666"
+            android:textSize="32px"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/lin"
+            android:layout_width="528px"
+            android:layout_height="28px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120px"
+            android:background="@mipmap/exceptuon_status"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cel1"
+                android:layout_width="20px"
+                android:layout_height="22px"
+                android:layout_marginLeft="3px"
+                android:src="@drawable/circle_bg_yellow" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginLeft="-10px"
+                android:layout_marginRight="-10px"
+                android:layout_weight="1"
+                android:background="@color/blue_head" />
+
+            <ImageView
+                android:id="@+id/cel2"
+                android:layout_width="20px"
+                android:layout_height="22px"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_bg_yellow"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginLeft="-10px"
+                android:layout_marginRight="-10px"
+                android:layout_weight="1"
+                android:background="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/cel3"
+                android:layout_width="20px"
+                android:layout_height="22px"
+                android:layout_gravity="center"
+                android:layout_marginRight="3px"
+                android:background="@drawable/circle_bg_yellow"
+
+                />
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/daitijiao"
+            android:layout_width="114px"
+            android:layout_height="67px"
+            android:layout_marginLeft="51px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/pop"
+            android:gravity="center"
+            android:text="待提交"
+            android:textColor="#989898"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/yicli"
+            android:layout_width="114px"
+            android:layout_height="67px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/pop"
+            android:gravity="center"
+            android:text="已处理"
+            android:textColor="#989898"
+            android:textSize="25px" />
+
+
+        <TextView
+            android:id="@+id/daicli"
+            android:layout_width="114px"
+            android:layout_height="67px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="55px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/pop"
+            android:gravity="center"
+            android:text="待处理"
+            android:textColor="#989898"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/flag_tv"
+            android:layout_width="528px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="dsadsadasdasd"
+            android:textColor="@color/orange_head"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/flag_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_below="@+id/flag_tv"
+            android:layout_marginTop="20px"
+
+            android:background="#F1F1F1"
+            android:gravity="center_vertical"
+            android:text="物流单号"
+            android:textColor="#3B3B3B"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullableListView
+        android:id="@+id/hd_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/rl"
+        android:layout_weight="1"
+        android:background="#F1f1f1"
+        android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+</RelativeLayout>

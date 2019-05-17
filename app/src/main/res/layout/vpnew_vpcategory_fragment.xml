@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--顶部end          -->
+    <!--第三个-->
+    <LinearLayout
+        android:id="@+id/search_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/blue_head"
+        android:orientation="vertical"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp">
+        <LinearLayout
+            android:id="@+id/serach_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:text="输入食材名称/关键字搜索"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--头部结束-->
+
+    <LinearLayout
+        android:id="@+id/content_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_below="@+id/search_top3"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F1F1F1">
+
+        </ListView>
+
+        <com.jisupei.activity.homepage2.PinnedHeaderListView
+            android:id="@+id/pinnedListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8"
+            android:background="@android:color/white"
+
+            android:divider="@null">
+        </com.jisupei.activity.homepage2.PinnedHeaderListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

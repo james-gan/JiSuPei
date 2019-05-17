@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="#666"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/qt"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="220px"
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+
+        android:text="其他客户注册"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+    <Button
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="120px"
+        android:background="@drawable/yellow_bg"
+        android:gravity="center"
+
+        android:text="微批客户注册"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+    <!--<Button-->
+    <!--android:id="@+id/save_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="98px"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/blue_head"-->
+    <!--android:gravity="center"-->
+    <!--android:text="下一步"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="30px" />-->
+
+    <View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    ></View>
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30px"
+        android:text="客服热线:400-186-0688"
+        android:textColor="@color/light_black"
+        android:textSize="26px" />
+</LinearLayout>

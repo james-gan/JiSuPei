@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pst="http://schemas.android.com/apk/res-auto"
+    xmlns:stick="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey">
+    <LinearLayout
+
+        android:id="@+id/search_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@color/blue_head"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_bt"-->
+            <!--android:background="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"/>-->
+        <LinearLayout
+            android:id="@+id/serach_ll"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            >
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:hint="输入食材名称/关键字搜索"
+                android:textColor="#666666"
+                android:background="#00000000"
+                 android:editable="false"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/login_rl"
+            android:layout_width="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mine"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@mipmap/tx"
+
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+                android:textColor="#ffffffff"
+                android:layout_below="@+id/mine"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <com.jisupei.utils.widget.MyPagerSlidingTabStrip
+            android:id="@+id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/search_badge"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            pst:pstsDividerColor="#00000000"
+            pst:pstsIndicatorColor="@color/yellow1"
+            pst:pstsIndicatorHeight="4dp"
+            pst:pstsScaleZoomMax="0"
+            android:background="@color/white"
+            pst:pstsShouldExpand="false"
+            pst:pstsTextSelectedColor="@color/yellow1"
+            pst:pstsUnderlineColor="@color/yellow1"
+            pst:pstsUnderlineHeight="1dp"
+            pst:pstsTabPaddingLeftRight="15dp"
+
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:layout_below="@+id/id_stickynavlayout_indicator"
+            android:layout_above="@+id/shopping_cart_bottom"
+            />
+
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_cart_height"
+        android:layout_alignParentBottom="true"
+        android:background="#192F4A"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_total_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/shopping_cart_total_price_left_magrin"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="120"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopping_cart_total_price_word_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+
+            android:background="@color/yellow111"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <!--圆圈-->
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shopping_cart_bottom_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/circle">
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/gouwu1" />
+
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_homepage_orang"
+            android:gravity="center"
+            android:text="81"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+</RelativeLayout>

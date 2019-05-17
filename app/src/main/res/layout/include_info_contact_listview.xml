@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:paddingLeft="26px"
+
+        android:text="第一联系人"
+        android:gravity="center_vertical"
+        android:background="#66999999"
+        android:textSize="30px" />
+
+    <RelativeLayout
+        android:id="@+id/diyi_rl"
+        android:layout_width="match_parent"
+        android:layout_height="84px">
+        <TextView
+            android:id="@+id/diyi_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:layout_marginLeft="26px"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:textSize="30px"
+            android:layout_toRightOf="@+id/close"
+            />
+
+        <TextView
+            android:id="@+id/diyi_contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12321321312"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:layout_toLeftOf="@+id/jiantou"
+            android:layout_marginRight="40px"
+            android:textSize="30px"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_button11"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#66999999"
+            android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/qita"
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:paddingLeft="26px"
+        android:gravity="center_vertical"
+        android:text="其他联系人"
+        android:background="#66999999"
+        android:textSize="30px" />
+
+
+</LinearLayout>

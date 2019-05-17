@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="@color/white"
+        android:layout_height="104px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_bt"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#666"
+            android:text="确认收货"
+            android:id="@+id/textView"
+            />
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="20px"
+            android:background="@mipmap/excettion"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="15px"
+    android:paddingTop="15px"
+android:background="@color/white"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="货品信息"
+        android:layout_weight="1"
+    android:layout_marginLeft="20px"
+    android:textSize="30px"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="异常"
+        android:layout_marginRight="20px"
+        android:textSize="30px"
+        />
+</LinearLayout>
+    <TextView
+       android:layout_width="match_parent"
+      android:layout_height="2px"
+      android:textColor="#666666"
+        />
+    <com.jingchen.pulltorefresh.PullableRecyclerView
+        android:background="@color/white"
+        android:id="@+id/qrsh_RecyclerView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </com.jingchen.pulltorefresh.PullableRecyclerView>
+
+    <TextView
+        android:id="@+id/tj_tv"
+        android:layout_width="540px"
+        android:layout_height="100px"
+        android:gravity="center"
+
+        android:background="@drawable/yellow_bg"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40px"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        />
+</LinearLayout>

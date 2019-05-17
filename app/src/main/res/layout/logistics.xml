@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:background="@color/light_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/top_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="@color/yellow1"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="?android:attr/selectableItemBackground"-->
+            <!--android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/back_bt"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:text="查看物流"-->
+            <!--android:id="@+id/textView"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/back_bt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#666"
+            android:text="查看物流"
+            android:id="@+id/textView"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="40dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流信息"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:id="@+id/title"
+            />
+
+        <View android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:background="@color/light_grey1"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/price_logistics"
+            android:id="@+id/text1"
+            android:text="物流费用:"/>
+
+        <TextView
+            android:id="@+id/price_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:text="￥0.00"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:divider="@null"
+        android:dividerHeight="12dp" />
+
+</RelativeLayout>

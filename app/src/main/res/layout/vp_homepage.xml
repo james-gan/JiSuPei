@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@color/blue_head"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/serach_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:text="输入食材名称/关键字搜索"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_top3"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/qbmd_rl"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/qbmd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="全部门店" />
+
+            <ImageView
+                android:id="@+id/qbmd_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jiantou"
+                android:layout_toRightOf="@+id/qbmd"
+                android:layout_centerVertical="true"
+
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999">
+
+
+        </View>
+       <RelativeLayout
+           android:id="@+id/qbfl_rl"
+           android:layout_width="0px"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/qbfl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:text="全部分类" />
+
+        <ImageView
+            android:id="@+id/qbfl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou"
+            android:layout_toRightOf="@+id/qbfl"
+            android:layout_centerVertical="true"
+
+            />
+       </RelativeLayout>
+    </LinearLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl"
+        android:background="@color/light_white">
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/relListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+
+
+
+</RelativeLayout>

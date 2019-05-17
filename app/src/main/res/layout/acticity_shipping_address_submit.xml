@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="选择收货地址"
+            android:textColor="#666"
+            android:textSize="32px" />
+        <TextView
+            android:id="@+id/guanli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+
+            android:text="管理"
+            android:textColor="@color/blue_head"
+            android:padding="20px"
+            android:textSize="32px" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullableListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_address"
+        android:layout_below="@+id/top_layout"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@null"></com.jingchen.pulltorefresh.PullableListView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/add_address"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="98px"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/blue_head"-->
+        <!--android:gravity="center"-->
+        <!--android:text="添加新地址"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="30px" />-->
+</RelativeLayout>

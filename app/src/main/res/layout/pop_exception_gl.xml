@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+            android:id="@+id/pop"
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:layout_height="90px">
+
+            <View android:id="@+id/line"
+                android:layout_width="4px"
+                android:layout_centerVertical="true"
+                android:background="@color/yellow"
+                android:layout_marginLeft="30px"
+                android:layout_height="50px"
+                />
+            <TextView
+                android:id="@+id/good_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/line"
+                android:text="货品:越南巴沙鱼片1*200g"
+                android:textSize="35px"
+                />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="35px"
+                android:layout_height="34px"
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:background="@mipmap/bottom_close"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingBottom="30px"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hpjd"
+            android:layout_marginTop="30px"
+            android:layout_height="60px"
+            android:text="货品解冻"
+            android:background="@drawable/select_pop_yy_err"
+            android:layout_width="160px"
+            android:height="40px"
+            android:gravity="center"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/hpcf"
+            android:layout_marginLeft="20px"
+            android:layout_alignTop="@+id/hpjd"
+            android:layout_toRightOf="@+id/hpjd"
+            android:layout_width="160px"
+            android:layout_height="60px"
+            android:text="货品错发"
+            android:height="40px"
+
+            android:gravity="center"
+            android:background="@drawable/select_pop_yy_err"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/hpsh"
+            android:layout_marginLeft="20px"
+            android:layout_alignTop="@+id/hpcf"
+            android:layout_toRightOf="@+id/hpcf"
+
+            android:layout_height="60px"
+            android:text="货品损坏"
+            android:background="@drawable/select_pop_yy_err"
+            android:layout_width="160px"
+            android:height="40px"
+            android:gravity="center"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/hpqs"
+            android:layout_below="@+id/hpjd"
+            android:layout_alignLeft="@+id/hpjd"
+            android:layout_marginTop="30px"
+            android:layout_height="60px"
+            android:text="货品缺失"
+            android:background="@drawable/select_pop_yy_err"
+            android:layout_width="160px"
+            android:height="40px"
+            android:gravity="center"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/qt"
+            android:layout_toRightOf="@+id/hpqs"
+            android:layout_alignTop="@+id/hpqs"
+
+            android:layout_height="60px"
+            android:text="其他"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/select_pop_yy_err"
+            android:layout_width="160px"
+            android:height="40px"
+            android:gravity="center"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/edit_pop"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/hpqs"
+            android:layout_width="500px"
+            android:layout_height="200px"
+            android:background="@drawable/shape_pop_gray"
+            android:padding="6px"
+            android:gravity="top"
+            android:textSize="30px"
+            />
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:background="@color/white"
+            android:id="@+id/lin"
+            android:layout_marginTop="20px"
+            android:layout_width="540px"
+            android:layout_below="@+id/edit_pop"
+            android:layout_height="200px"
+            >
+        </com.jingchen.pulltorefresh.PullableRecyclerView>
+          <!--<LinearLayout-->
+              <!--android:id="@+id/lin"-->
+              <!--android:layout_width="540px"-->
+              <!--android:layout_below="@+id/edit_pop"-->
+                <!--android:layout_marginTop="30px"-->
+                  <!--android:layout_height="wrap_content"-->
+              <!--android:orientation="horizontal"-->
+              <!--&gt;-->
+               <!--<TextView-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:text="上传照片"-->
+                   <!--android:textSize="30px"-->
+                   <!--/>-->
+          <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:layout_below="@+id/lin"-->
+            <!--android:id="@+id/save_btn"-->
+            <!--android:layout_width="540px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="40px"-->
+            <!--android:layout_marginTop="20px"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:padding="24px"-->
+            <!--android:background="@drawable/yellow_bg"-->
+            <!--android:text="保存"-->
+
+            <!--/>-->
+
+    </RelativeLayout>
+
+    <!--<ListView android:id="@+id/cart_list"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:listSelector="@android:color/transparent"-->
+            <!--/>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/cart_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@mipmap/bottom_bg"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cart_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:src="@mipmap/cart_index"/>-->
+
+        <!--<TextView android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_toRightOf="@+id/cart_image"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="8"-->
+            <!--android:id="@+id/cart_num"-->
+            <!--android:visibility="invisible"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="12dp"-->
+            <!--android:background="@drawable/red_circle_bg"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/cart_num"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;<RelativeLayout android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView android:id="@+id/cart_num_text"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="添加购物车"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:visibility="visible"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/submit_bt"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="110dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/yellow"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="提交"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="15dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

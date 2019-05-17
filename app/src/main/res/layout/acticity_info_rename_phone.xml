@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/top_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/yellow1"-->
+        <!--android:padding="5dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_bt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="?android:attr/selectableItemBackground"-->
+            <!--android:src="@mipmap/ic_keyboard_arrow_left_white_36dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="修改联系人"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="40px" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="26px"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="修改联系人"
+            android:textColor="#666"
+            android:textSize="32px" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/rename_et"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60px"-->
+    <!--android:hint="请输入收货人姓名"-->
+    <!--android:layout_marginTop="100px"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_marginRight="50px"-->
+    <!--android:gravity="bottom"-->
+    <!--android:textSize="35px"-->
+    <!--android:background="@color/transparent"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2px"-->
+    <!--android:background="@color/light_black"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_marginRight="50px"-->
+    <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="姓名:"
+            android:textColor="#666666"
+            android:textSize="30px"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/rename_et"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginRight="50px"
+            android:background="@color/transparent"
+            android:hint="请输入采购联系人姓名"
+            android:textColorHint="#c6c6cc"
+            android:textSize="30px"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:layout_marginLeft="10px"
+
+            />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="#C8C8C8"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="电话:"
+            android:textColor="#666666"
+            android:textSize="30px"
+
+            ></TextView>
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginRight="50px"
+            android:background="@color/transparent"
+            android:hint="请输入采购联系人电话"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColorHint="#c6c6cc"
+            android:textSize="30px"
+            android:singleLine="true"
+            android:layout_marginLeft="10px"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textColor="#ff671d"
+            android:drawableLeft="@mipmap/mail"
+
+            android:drawablePadding="10px"
+
+            android:textSize="31px"
+            android:maxLength="11"
+            />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="#C8C8C8" />
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="验证码:"
+            android:textColor="#666666"
+            android:textSize="28px"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/yqz_et"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginRight="50px"
+            android:background="@color/transparent"
+            android:hint="请输入验证码"
+            android:textColorHint="#c6c6cc"
+            android:textSize="28px"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="#C8C8C8"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="21px"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textSize="29px" />
+
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_head"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+</LinearLayout>

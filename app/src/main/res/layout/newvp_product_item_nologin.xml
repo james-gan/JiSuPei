@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="0.5dp"
+        android:background="#ffffffff">
+
+        <RelativeLayout
+            android:id="@+id/img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/error" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_below="@+id/img_rl"
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="酱油酱油酱油酱油酱酱油酱油酱油酱油酱dsa酱油酱油酱油酱油酱dsa酱油酱油酱油酱油酱dsa酱油酱油酱油酱油酱dsadsad"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+
+
+        <TextView
+            android:id="@+id/styleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_text"
+            android:layout_below="@+id/name_text"
+            android:layout_marginTop="2dp"
+            android:text="规格:100*10g(1件=20袋)"
+            android:textColor="#A6A6A6"
+            android:textSize="11sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            />
+
+        <TextView
+            android:id="@+id/supplier_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+            android:text="规格：100*10g(1件=20袋)"
+            android:textColor="@color/blue_head"
+            android:textSize="11sp"
+            android:maxEms="10"
+            android:maxLines="1"
+             android:ellipsize="end"
+
+            />
+        <TextView
+
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/name_text"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginRight="8dp"
+
+            android:text="12.00"
+            android:textColor="@color/orange_head"
+            android:textSize="14sp"
+            android:layout_above="@+id/supplier_name"
+
+            />
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/xuangou_ll"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="7dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/xuangou"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="2dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/blue_head"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingBottom="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingRight="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="选购"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#ffffffff"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+
+               <!--<ImageView-->
+                   <!--android:id="@+id/xuangou"-->
+                   <!--android:layout_width="wrap_content"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:src="@mipmap/gw"-->
+                   <!--/>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+</LinearLayout>

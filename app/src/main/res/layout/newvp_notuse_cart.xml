@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--<include-->
+        <!--android:id="@+id/head_include"-->
+        <!--layout="@layout/include_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_top3"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:background="@color/light_white">
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/white"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dip"
+
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:smoothScrollbar="true"
+            android:visibility="visible"
+            android:layout_marginBottom="2dp"
+            />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="处理异常"
+            android:textColor="#666"
+            android:textSize="32px"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192px"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="130px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            fresco:actualImageScaleType="fitXY"
+            fresco:failureImage="@mipmap/error_new"
+            fresco:placeholderImage="@mipmap/add_image_wuliu"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:progressBarImage="@mipmap/load"
+            fresco:progressBarImageScaleType="fitXY"
+            fresco:roundedCornerRadius="4dp"
+            fresco:viewAspectRatio="1" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/img"
+
+            android:text="啊"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/guige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/product_name"
+            android:layout_below="@+id/product_name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10px"
+            android:text="名称"
+            android:textColor="#A6A6A6"
+            android:textSize="25px"
+
+            />
+
+        <TextView
+            android:id="@+id/daifa_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/img"
+            android:text="啊"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/shifa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/daifa_num"
+            android:layout_marginLeft="67px"
+            android:layout_toRightOf="@+id/daifa_num"
+            android:text="实发：50件13袋"
+            android:textColor="@color/blue_head"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/product_name"
+            android:layout_below="@+id/product_name"
+
+            android:layout_marginRight="30px"
+            android:text="188.0"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/shiliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/price_tv"
+            android:layout_marginRight="30px"
+            android:text="X1000"
+            android:textColor="#666666"
+            android:textSize="30px" />
+    </RelativeLayout>
+    <!--异常类型-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:paddingBottom="20px"
+        android:paddingTop="30px">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/line"
+            android:text="异常类型"
+            android:textColor="@android:color/black"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:id="@+id/yc_lei_xing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/lx1"
+                android:layout_width="128px"
+                android:layout_height="50px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_order_hui_exception"
+                android:gravity="center"
+                android:text="货品解冻"
+                android:textColor="#666666"
+                android:textSize="23px" />
+
+            <TextView
+                android:id="@+id/lx2"
+                android:layout_width="128px"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/shape_order_hui_exception"
+                android:gravity="center"
+                android:text="货品错发"
+                android:textColor="#666666"
+                android:textSize="23px" />
+
+            <TextView
+                android:id="@+id/lx3"
+                android:layout_width="128px"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/shape_order_hui_exception"
+                android:gravity="center"
+                android:text="货品损坏"
+                android:textColor="#666666"
+                android:textSize="23px" />
+
+            <TextView
+                android:id="@+id/lx4"
+                android:layout_width="128px"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/shape_order_hui_exception"
+                android:gravity="center"
+
+
+                android:text="货品缺失"
+                android:textColor="#666666"
+                android:textSize="23px" />
+
+            <TextView
+                android:id="@+id/lx5"
+                android:layout_width="128px"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/shape_order_hui_exception"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="#666666"
+                android:textSize="23px" />
+
+        </LinearLayout>
+
+        <!--图片-->
+        <LinearLayout
+            android:id="@+id/image_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yc_lei_xing"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="30px"
+
+                android:src="@mipmap/add_img" />
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="20px"
+
+                android:src="@mipmap/add_img" />
+
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="20px"
+
+                android:src="@mipmap/add_img" />
+
+        </LinearLayout>
+        <!--异常说名-->
+        <TextView
+            android:id="@+id/ycsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ll"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:text="异常说明：123213213123"
+            android:textColor="@color/orange_head"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/clyj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="处理意见"
+            android:textSize="30px"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/miaoshu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_toRightOf="@+id/clyj"
+            android:background="@color/white"
+            android:hint="请填写处理意见"
+            android:paddingLeft="10px"
+
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="35px" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/blue_head"
+        android:gravity="center"
+
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+
+</LinearLayout>

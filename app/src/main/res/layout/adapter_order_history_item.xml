@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#F1F1F1"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="88px">
+
+        <TextView
+
+            android:id="@+id/num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:drawableLeft="@mipmap/order_left1"
+            android:drawablePadding="10px"
+            android:text="订单编号"
+            android:textSize="28px" />
+
+        <TextView
+
+        android:id="@+id/creat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:text="2016-123-123"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/go_order_details"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="98px">
+
+        <TextView
+            android:id="@+id/cgzl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       android:layout_marginTop="10px"
+            android:layout_marginLeft="20px"
+            android:text="采购总类"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/price"
+       android:layout_alignLeft="@+id/cgzl"
+            android:layout_below="@+id/cgzl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textColor="@color/orange_head"
+            android:text="订单价格：45.00"
+
+            android:textSize="28px" />
+
+        <ImageView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+
+            android:background="@mipmap/order_right"
+          />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD"></View>
+    </RelativeLayout>
+</LinearLayout>

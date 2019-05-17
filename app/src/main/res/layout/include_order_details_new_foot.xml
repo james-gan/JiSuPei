@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+
+
+    <!--  价钱-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30px"
+                android:text="商品总额："
+                android:textSize="30px"
+                android:layout_toLeftOf="@+id/spzje_tv"
+
+                />
+
+            <TextView
+                android:id="@+id/spzje_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30px"
+                android:text="12321312123"
+                android:textColor="@color/orange_head"
+                android:textSize="30px" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/youhuijuan_rl"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30px"
+                android:text="优惠券："
+                android:textSize="30px"
+                android:layout_toLeftOf="@+id/youhjuan_money"
+
+                />
+
+            <TextView
+                android:id="@+id/youhjuan_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30px"
+                android:text="-100"
+                android:textColor="@color/orange_head"
+                android:textSize="30px" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/yfk_rl"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30px"
+                android:text="应付款："
+                android:textSize="30px"
+                android:layout_toLeftOf="@+id/yfk_money"
+                />
+
+            <TextView
+                android:id="@+id/yfk_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30px"
+                android:text="-100"
+                android:textColor="@color/orange_head"
+
+                android:textSize="30px" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/ytk_rl"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30px"
+                android:text="应退款："
+                android:textSize="30px"
+                android:layout_toLeftOf="@+id/ytk_money"
+                />
+
+            <TextView
+                android:id="@+id/ytk_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30px"
+                android:text="-100"
+                android:textColor="@color/orange_head"
+
+                android:textSize="30px" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:paddingBottom="20px"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30px"
+                android:text="运费"
+                android:textSize="30px"
+
+                />
+
+            <TextView
+                android:id="@+id/yunfei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30px"
+                android:text="12321312123"
+                android:textColor="@color/orange_head"
+                android:textSize="30px" />
+
+        </RelativeLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/zf"-->
+            <!--android:layout_width="170px"-->
+            <!--android:layout_height="70px"-->
+            <!--android:gravity="center"-->
+            <!--android:text="立即支付"-->
+            <!--android:layout_marginRight="30px"-->
+            <!--android:background="@drawable/yellow_bg"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px"-->
+            <!--android:layout_gravity="right"></TextView>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#ffffffff"></View>
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

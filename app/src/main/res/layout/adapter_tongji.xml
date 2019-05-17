@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+      <TextView
+          android:id="@+id/xiaodanshijian"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40px"
+          android:text="下单时间:2016-05-20 17：00"
+          android:layout_marginLeft="70px"
+          android:textSize="30px"
+          />
+        <TextView
+            android:id="@+id/orderid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="订单号:56521516341654"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36px"
+            android:layout_marginLeft="70px"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/order_staue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:text="待配送"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40px"
+            android:textSize="30px"
+            />
+        <TextView
+            android:id="@+id/pos_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="1、"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/orderdetail_tv"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:gravity="center"
+            android:text="查看详情"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/yellow_bg4"
+            android:textColor="@color/yellow"
+            android:layout_marginBottom="36px"
+            android:layout_marginRight="20px"
+            android:textSize="30px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+
+            android:text="1、"
+
+            android:layout_marginLeft="30px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

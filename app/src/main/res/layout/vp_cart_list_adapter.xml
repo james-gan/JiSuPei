@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+       >
+        <RelativeLayout
+            android:id="@+id/img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/card_active"
+            >
+            <TextView
+                android:id="@+id/money_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+                android:text="200"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/man_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+
+                android:text="200"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/img_rl"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_cart_bg"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:text="新人礼包"
+            android:textColor="#333333"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/lingqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cart_name"
+            android:layout_marginTop="1dp"
+            android:text="点击领取"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_order_blue_exception"
+
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            />
+            <ImageView
+                android:id="@+id/has_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bid_label_get"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/content1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue_head"
+            android:text="更多" />
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#dddddd"-->
+
+        <!--&gt;</View>-->
+</LinearLayout>

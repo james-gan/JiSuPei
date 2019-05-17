@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+            android:id="@+id/pop"
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:layout_height="45dp">
+
+            <View android:id="@+id/line"
+                android:layout_width="4dp"
+                android:layout_centerVertical="true"
+                android:background="@color/yellow"
+                android:layout_marginLeft="15dp"
+                android:layout_height="25dp"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/line"
+                android:text="购物车"/>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@mipmap/delete"
+                android:text="清空"/>
+
+    </RelativeLayout>
+
+    <ListView android:id="@+id/cart_list"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="none"
+            android:layout_height="250dp"
+            android:listSelector="@android:color/transparent"
+            />
+    <RelativeLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bottom_bg"
+        >
+
+        <ImageView
+            android:id="@+id/cart_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/cart_index"/>
+
+        <TextView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/cart_image"
+            android:layout_marginTop="8dp"
+            android:text="8"
+            android:id="@+id/cart_num"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/red_circle_bg"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cart_num"
+            />
+
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/cart_num_text"
+                android:layout_width="wrap_content"
+
+                android:text="添加购物车"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="110dp"
+                android:background="@color/yellow111"
+                android:text="提交"
+                android:visibility="invisible"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

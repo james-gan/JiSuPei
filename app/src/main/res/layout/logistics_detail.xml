@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back_black"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/back_bt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#666"
+            android:text="物流详情"
+            android:id="@+id/textView"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:background="@mipmap/bjj"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_height="35dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号：15565666"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:id="@+id/number"
+            android:textColor="@color/white"
+            />
+
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/status"
+            android:textColor="@color/white"
+            android:text="配送中"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/title_layout2"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+
+
+        android:layout_height="35dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货清单"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:drawableLeft="@mipmap/fhqd"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+
+            />
+
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/back_button11"
+            android:layout_marginRight="15dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"
+            ></View>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/title_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+
+        android:id="@+id/list"/>
+
+</RelativeLayout>

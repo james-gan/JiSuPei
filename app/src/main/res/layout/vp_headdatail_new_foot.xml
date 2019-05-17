@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品总额" />
+        <TextView
+            android:id="@+id/spzje_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_head"
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/youhuijuan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券" />
+        <TextView
+            android:id="@+id/youhjuan_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_head"
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/yfk_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应收金额" />
+        <TextView
+            android:id="@+id/yfk_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_head"
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ytk_rl"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收金额" />
+        <TextView
+            android:id="@+id/ytk_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_head"
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zffsRL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式" />
+        <TextView
+            android:id="@+id/zffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_head"
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fffsRL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货方式" />
+        <TextView
+            android:id="@+id/fffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            android:text="订单号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fhclRL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货车辆" />
+        <TextView
+            android:id="@+id/fhcl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            android:text="订单号" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fhckRL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货仓库" />
+        <TextView
+            android:id="@+id/fhck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            android:text="订单号" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ywyrl"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="业务员" />
+        <TextView
+            android:id="@+id/ywy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            android:text="订单号" />
+    </RelativeLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#d3d3d3"-->
+        <!--&gt;</View>-->
+
+    <!--  价钱-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/zf"-->
+            <!--android:layout_width="170px"-->
+            <!--android:layout_height="70px"-->
+            <!--android:gravity="center"-->
+            <!--android:text="立即支付"-->
+            <!--android:layout_marginRight="30px"-->
+            <!--android:background="@drawable/yellow_bg"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px"-->
+            <!--android:layout_gravity="right"></TextView>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#ffffffff"></View>
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

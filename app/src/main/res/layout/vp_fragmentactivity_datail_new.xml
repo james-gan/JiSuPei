@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:pst="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="订单详情"
+            android:textColor="#666"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#999999"></View>
+    </RelativeLayout>
+
+    <com.jisupei.activity.datail.wiget.MyDatailPagerSlidingTabStrip
+        android:id="@+id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        pst:pstsShouldExpand="true"
+        pst:pstsDividerColor="#00000000"
+        pst:pstsIndicatorColor="@color/yellow1"
+        pst:pstsIndicatorHeight="2dp"
+        pst:pstsScaleZoomMax="0"
+        android:background="@color/white"
+        pst:pstsTextSelectedColor="@color/yellow1"
+
+        pst:pstsUnderlineColor="#B3B3B3"
+        pst:pstsUnderlineHeight="1dp"
+        pst:pstsTextAllCaps="false"
+        android:layout_below="@+id/head_include"
+        android:visibility="gone"
+        />
+    <com.jisupei.activity.datail.wiget.MyViewPager
+        android:id="@+id/id_stickynavlayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</LinearLayout>

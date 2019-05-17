@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+
+            android:id="@+id/minDanWei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="1"
+            android:minWidth="50dp"
+            android:minHeight="25dp"
+            android:gravity="center"
+            android:background="@drawable/shape_jiage"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+              android:id="@+id/minDanWei_text"
+            android:layout_toRightOf="@+id/minDanWei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:hint="件"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+
+            android:layout_toRightOf="@+id/minDanWei_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:hint="~"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+            android:id="@+id/maxDanWei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:minWidth="50dp"
+            android:minHeight="25dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/shape_jiage"
+            android:hint="1件"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/maxDanWei_text"
+            android:layout_toRightOf="@+id/maxDanWei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:hint="件"
+            android:gravity="center"
+
+            android:textSize="14sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/danjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:minWidth="50dp"
+            android:minHeight="25dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/shape_jiage"
+            android:hint="1"
+            android:layout_toLeftOf="@+id/danjia_text"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/danjia_text"
+        android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:hint="元/件"
+            android:gravity="center"
+
+            android:textSize="14sp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d1d1d1"
+            android:layout_alignParentBottom="true"
+            ></View>
+
+    </RelativeLayout>
+</LinearLayout>

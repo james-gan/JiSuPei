@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@drawable/pop_item_order"
+        android:gravity="center_vertical"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/menu1"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="3px"
+            android:layout_marginTop="40px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="上传回单"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu2"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="2px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="确认收货"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/menu3"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="2px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_send" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="上传异常"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu4"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="5px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_modify" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="查看物流"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/menu5"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="2px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="历史订单"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu6"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="2px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="查看回单"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu7"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="2px"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/menu6"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@mipmap/head_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="查看异常"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

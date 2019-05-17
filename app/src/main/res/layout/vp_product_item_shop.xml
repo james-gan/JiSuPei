@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <RelativeLayout
+        android:id="@+id/img_rl"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/error"
+
+            android:id="@+id/product_img"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_rl"
+        android:layout_toLeftOf="@+id/sp_jiage"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/img_rl"
+        android:text="酱油酱油酱油酱油酱dsad"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text"
+        android:layout_below="@+id/name_text"
+        android:layout_marginTop="2dp"
+        android:text="地址"
+        android:textColor="#666666"
+        android:textSize="14sp"
+
+        />
+    <TextView
+        android:id="@+id/time_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="2dp"
+        android:text="营业时间:08:00--18:00"
+        android:textColor="#666666"
+        android:textSize="14sp"
+
+        />
+    <TextView
+        android:id="@+id/shop_contanct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text"
+        android:layout_below="@+id/time_shop"
+        android:layout_alignTop="@+id/ll"
+        android:layout_marginTop="2dp"
+        android:text="门店店长"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text"
+        android:layout_marginTop="1dp"
+        android:text="1232"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+
+
+        />
+    <!--<TextView-->
+        <!--android:id="@+id/num_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/right_dish_name"-->
+        <!--android:layout_below="@+id/sp_guig_tv"-->
+        <!--android:layout_alignTop="@+id/num_ll"-->
+        <!--android:text="10件"-->
+        <!--android:textColor="#666666"-->
+        <!--android:textSize="14sp" />-->
+
+
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+
+
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+</LinearLayout>

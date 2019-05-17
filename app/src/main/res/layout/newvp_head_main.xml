@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <!--android:fitsSystemWindows="true" -->
+    <!--android:clipToPadding ="true"-->
+    <com.jisupei.ywy.widget.NoScrollViewPager
+        android:id="@+id/main_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_view"
+        >
+    </com.jisupei.ywy.widget.NoScrollViewPager>
+    <View
+        android:id="@+id/div_view"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/main_radiogroup"
+
+        android:background="#ffc9cacb" />
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RadioButton
+            android:id="@+id/index_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/vpnew_select_index"
+            android:text="主页"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:checked="true"
+            android:textSize="11sp"
+            />
+        <RadioButton
+            android:id="@+id/category_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/vpnew_select_fenlei"
+            android:text="分类"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="11sp"
+            />
+        <RadioButton
+            android:id="@+id/cart_rb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/vpnew_select_cart"
+            android:text="购物车"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="11sp"
+
+            />
+
+        <TextView
+            android:id="@+id/cart_num"
+
+            android:layout_width="wrap_content"
+            android:minWidth="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="-47dp"
+            android:background="@drawable/shape_homepage_newvp"
+            android:gravity="center"
+            android:layout_marginTop="26dp"
+            android:text="21"
+            android:textColor="@android:color/white"
+
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/seting_rb"
+            android:layout_marginLeft="27dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/vpnew_select_me"
+            android:gravity="center"
+            android:text="个人中心"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+              android:paddingRight="5dp"
+            android:textSize="11sp"
+            />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

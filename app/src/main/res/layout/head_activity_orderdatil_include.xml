@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@+id/kongge"
+
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgr"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/arrow_right"
+            fresco:placeholderImageScaleType="centerInside"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="10px"
+            android:text="餐饮"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/use_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="60px"
+
+            android:drawableLeft="@mipmap/head_cus"
+            android:drawablePadding="9px"
+            android:text="张小饭"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/use_name"
+            android:layout_marginLeft="120px"
+
+            android:layout_toRightOf="@+id/use_name"
+            android:drawableLeft="@mipmap/head_phone"
+            android:drawablePadding="9px"
+            android:text="18627916596"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="100px"
+
+            android:drawableLeft="@mipmap/head_address"
+            android:drawablePadding="9px"
+            android:text="湖北省武汉市"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/henxian_flag"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/rt"
+
+        android:background="@color/yellow1" />
+
+    <TextView
+        android:id="@+id/remark_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:layout_below="@+id/henxian_flag"
+        android:background="@color/white"
+        android:text="备注的信息："
+        android:paddingLeft="44px"
+        android:paddingTop="10px"
+        android:textSize="28px"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:layout_below="@+id/remark_tv"
+        android:background="@color/white"
+        android:text="订单编号：522245454564654"
+        android:paddingLeft="44px"
+        android:paddingTop="10px"
+        android:layout_marginTop="20px"
+        android:textSize="28px"
+        />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/liuyan"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="20px"
+        android:layout_marginBottom="20px"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/liuyan_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/message1"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="30px"
+            />
+
+        <TextView
+            android:id="@+id/liuyan_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="10px"
+            android:text="留言湿倒萨爱上啊阿斯达斯sadasdasdasdasdasdasdasd"
+            android:textColor="#666666"
+               android:layout_alignTop="@+id/liuyan_iv"
+            android:layout_toRightOf="@+id/liuyan_iv"
+            android:textSize="28px" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+
+        android:layout_height="90px">
+        <TextView
+            android:id="@+id/grr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/beizhu"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+          android:layout_marginLeft="30px"
+            android:text="审核备注:"
+            android:textSize="30px" />
+        <EditText
+            android:id="@+id/shenhe_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/grr_code"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="30px"
+          android:hint="请填写您的审核意见"
+            android:textColor="#666666"
+            android:textColorHint="#999999"
+            android:text=""
+            android:textSize="30px" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

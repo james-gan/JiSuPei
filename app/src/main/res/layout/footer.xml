@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/light_white"
+
+    android:layout_height="match_parent">
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:background="@color/white"
+     ></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2"
+        ></View>
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:background="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+       <EditText
+           android:layout_width="match_parent"
+           android:background="@drawable/light_grey_circle_bg"
+           android:layout_height="120dp"
+           android:gravity="top"
+           android:id="@id/edit"
+           android:paddingTop="5dp"
+           android:paddingRight="5dp"
+           android:paddingLeft="5dp"
+           android:textSize="12dp"
+           android:hint="留言/备注"
+           android:textColorHint="#c6c6cc"
+           android:maxLength="60"
+           />
+
+     </LinearLayout>
+
+
+</LinearLayout>

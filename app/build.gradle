@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '28.0.2'
+
+
+    defaultConfig {
+        applicationId "com.jisupei"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 948
+        versionName "4.9"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+//     versionCode 922
+//    versionName "2.4"
+    //Android默认配置
+    sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java.srcDirs = [                                                                                                              'src/main/java']
+                /* resources.srcDirs = ['src/main/res']
+                 aidl.srcDirs = ['src']
+                 renderscript.srcDirs = ['src']*/
+                res.srcDirs = ['src/main/res']
+                assets.srcDirs = ['src/main/assets']
+            }
+                //测试所在的路径，这里假设是tests文件夹，没有可以不写这一行
+             androidTest.setRoot('test')
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        abortOnError false
+    }
+    /**
+    /**
+     * 签名设置
+     */
+    signingConfigs {
+        myConfigs {
+            storeFile file("realease.jks")
+            keyAlias "jsp"
+            keyPassword "android"
+            storePassword "android"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.myConfigs
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.myConfigs
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android{ useLibrary 'org.apache.http.legacy' }
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+//    compile 'com.android.support:apinstrumentTestpcompat-v7:24.1.1'
+//    compile 'com.android.support:support-v4:+'
+    api 'com.android.support:design:24.0.0'
+    api 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    api 'com.j256.ormlite:ormlite-android:4.48'
+    api 'de.greenrobot:eventbus:2.4.0'
+    api 'com.squareup.picasso:picasso:2.5.2'
+    api 'com.google.code.gson:gson:2.4'
+    api 'com.daimajia.slider:library:1.1.5@aar'
+    api 'com.zhy:autolayout:1.4.3'
+    api 'com.jakewharton:butterknife:5.1.1'
+//    implementation 'com.zhy:okhttputils:2.6.2'
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    api project(':pullToRefreshlibrary')
+//    implementation 'com.facebook.fresco:fresco:0.9.0'
+    // Fresco所需依赖
+    api 'com.facebook.fresco:fresco:0.12.0'
+    implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    api'com.orhanobut:logger:1.15'
+    api 'com.gxz.stickynavlayout:library:1.3'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'com.gxz.pagerslidingtabstrip:library:1.1'
+    api project(':hellocharts-library')
+    api 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //个推
+    api files('libs/GetuiSDK2.9.3.0.jar')
+    api files('libs/json_simple-1.1.jar')
+    api files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    api files('libs/BaiduLBS_Android.jar')
+    //蒲公英
+//    implementation files('libs/pgyer_sdk_2.4.5.jar')
+    api project(path: ':pickerview')
+    api project(':library')
+
+    api 'cn.bingoogolapple:bga-progressbar:1.0.1@aar'
+//    compimplementationile 'com.github.donkingliang:GroupedRecyclerViewAdapter:1.3.0'
+
+    implementation 'com.android.support:recyclerview-v7:23.4.0'
+    //   implementation "com.android.support:recyclerview-v7:28+"
+    api 'com.android.support:appcompat-v7:23.1.1'
+    api 'com.yanzhenjie:recyclerview-swipe:1.0.0'
+
+}

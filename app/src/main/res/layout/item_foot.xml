@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400px"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="top"
+    android:layout_height="200px"
+     android:paddingBottom="20px"
+    >
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/add_image1"
+        android:layout_width="165px"
+        android:layout_height="165px"
+        android:scaleType="fitXY"
+         fresco:placeholderImage="@mipmap/add_img"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传照片"
+        android:textSize="30px"
+        android:layout_marginLeft="20px"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

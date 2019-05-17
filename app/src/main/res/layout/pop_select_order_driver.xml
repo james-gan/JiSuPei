@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <LinearLayout
+            android:layout_marginTop="40px"
+            android:id="@+id/mLinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+               android:layout_width="180px"
+                android:layout_height="70px"
+                android:background="@drawable/select_order_bg"
+                android:text="待接订单"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="28px"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="180px"
+                android:layout_height="70px"
+                android:background="@drawable/select_order_bg"
+                android:text="待完成订单"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_marginLeft="40px"
+                android:textSize="28px"
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="180px"
+                android:layout_height="70px"
+                android:background="@drawable/select_order_bg"
+                android:text="已完成订单"
+                android:layout_marginLeft="40px"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="28px"
+                />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/mLinearLayout2"-->
+            <!--android:layout_marginTop="30px"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100px"-->
+            <!--android:layout_below="@+id/mLinearLayout1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn4"-->
+                <!--android:layout_width="180px"-->
+                <!--android:layout_height="70px"-->
+                <!--android:background="@drawable/select_order_bg"-->
+                <!--android:text="配送中订单"-->
+                <!--android:textSize="28px"-->
+                <!--android:textColor="@drawable/text_color_selector" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn5"-->
+                <!--android:layout_width="180px"-->
+                <!--android:layout_height="70px"-->
+                <!--android:background="@drawable/select_order_bg"-->
+                <!--android:text="已签收订单"-->
+                <!--android:textColor="@drawable/text_color_selector"-->
+                <!--android:layout_marginLeft="40px"-->
+                <!--android:textSize="28px"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn6"-->
+                <!--android:layout_width="180px"-->
+                <!--android:layout_height="70px"-->
+                <!--android:background="@drawable/select_order_bg"-->
+                <!--android:text="已取消订单"-->
+                <!--android:layout_marginLeft="40px"-->
+                <!--android:textColor="@drawable/text_color_selector"-->
+                <!--android:textSize="28px"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--顶部          -->
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="?attr/colorPrimary">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@mipmap/grzxbig"-->
+                <!--android:text="成都高新店"-->
+                <!--android:textColor="@color/white" />-->
+            <ImageView
+                android:id="@+id/back_bt"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_keyboard_arrow_left_white_36dp"/>
+            <TextView
+                android:id="@+id/name_meidian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:text="成都高新店"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxWidth="180dp"
+                android:textSize="13sp"
+                android:textColor="#ccFF462B"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+
+                />
+            <com.jisupei.activity.homepage2.widget.AlwaysMarqueeTextView
+                android:id="@+id/AutoScrollTextView"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:text="当前为代客户下单界面"
+              android:layout_below="@+id/name_meidian"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#ccFF462B"
+                android:textSize="14sp"
+                android:singleLine="true"
+
+                android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+                android:layout_marginTop="4dp"
+               >
+
+                <!--android:ellipsize="marquee"-->
+                <!--android:marqueeRepeatLimit="marquee_forever"-->
+                <!--android:focusable="true"-->
+                <!--android:scrollHorizontally="true"-->
+                <!--android:focusableInTouchMode="true"-->
+        </com.jisupei.activity.homepage2.widget.AlwaysMarqueeTextView>
+            <RelativeLayout
+                android:id="@+id/rl_yey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back_bt">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/shop_name_tv_index"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="餐饮连锁点撒倒萨打算倒萨倒萨"-->
+                    <!--android:ellipsize="end"-->
+
+                    <!--android:maxEms="10"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="11sp" />-->
+
+                <TextView
+                    android:id="@+id/name_meidian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/shop_name_tv_index"
+                    android:layout_marginLeft="0dp"
+                    android:text="立即退出"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxWidth="180dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <!--有图和 无图-->
+
+            <!--有图和 无图-->
+            <LinearLayout
+                android:id="@+id/tupian_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+
+              android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tupian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:src="@mipmap/youtu"
+                    android:text="成都高新店"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hasText1"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有图"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!--有图和 无图-->
+            <LinearLayout
+                android:id="@+id/tupian_ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+
+         android:layout_toLeftOf="@+id/tupian_ll"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tupian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:src="@mipmap/tianjia"
+                    android:text="成都高新店"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hasText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加临采"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!--消息-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/xiaoxi_ll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/xiaoxi"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+
+                    <!--android:src="@mipmap/newxiaoxi"-->
+                    <!--android:text="成都高新店"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="消息"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp" />-->
+
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+        <!--第2个-->
+        <!--<RelativeLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/top2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="51dp"-->
+            <!--android:background="?attr/colorPrimary"-->
+
+         <!--&gt;-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/left_grzx"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:src="@mipmap/grzxbig_smal"-->
+                    <!--android:text="成都高新店"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/grzx"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/image2"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:text="个人中心"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/search"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="7dp"-->
+                <!--android:layout_toLeftOf="@+id/tupian2_ll"-->
+                <!--android:layout_toRightOf="@+id/left_grzx"-->
+                <!--android:background="@drawable/shape_homepage_white"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawableLeft="@mipmap/search_home"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:text="输入食材名称/关键字搜索"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textColor="#666666" />-->
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;有图和 无图&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/tupian2_ll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+
+                <!--android:layout_toLeftOf="@+id/xiaoxi2_ll"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/tupian2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+
+                    <!--android:src="@mipmap/youtu"-->
+                    <!--android:text="成都高新店"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/hasText2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="有图"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp" />-->
+
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;消息&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/xiaoxi2_ll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/xiaoxi2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+
+                    <!--android:src="@mipmap/newxiaoxi"-->
+                    <!--android:text="成都高新店"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="消息"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp" />-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+    <!--顶部end          -->
+    <!--第三个-->
+    <LinearLayout
+        android:id="@+id/search_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@color/blue_head"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="2dp">
+        <LinearLayout
+            android:id="@+id/serach_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_homepage_white"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/search_home"
+                android:drawablePadding="5dp"
+                android:text="输入食材名称/关键字搜索"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/serach_key1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+               android:paddingTop="5dp"
+                android:text="大米"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/serach_key2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="油"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/serach_key3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="鸡肉"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/serach_key4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="鱼"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--头部结束-->
+
+    <LinearLayout
+        android:id="@+id/content_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:layout_below="@+id/search_top3"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F1F1F1">
+
+        </ListView>
+
+        <com.jisupei.activity.homepage2.PinnedHeaderListView
+            android:id="@+id/pinnedListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8"
+            android:background="@android:color/white"
+
+            android:divider="@null">
+        </com.jisupei.activity.homepage2.PinnedHeaderListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_cart_height"
+        android:layout_alignParentBottom="true"
+        android:background="#192F4A"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_total_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/shopping_cart_total_price_left_magrin"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="120"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopping_cart_total_price_word_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+
+            android:background="@color/yellow111"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <!--圆圈-->
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shopping_cart_bottom_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/circle">
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/gouwu1" />
+
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_homepage_orang"
+            android:gravity="center"
+            android:text="81"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+</RelativeLayout>

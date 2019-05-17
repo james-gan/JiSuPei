@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:background="@mipmap/bjj"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_height="40dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号：15565666"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:id="@+id/number"
+            android:textColor="@color/white"
+            />
+
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/title_layout2"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+
+            android:id="@+id/sp_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="10dp"
+
+            android:text="发货清单dsd"
+            android:layout_toLeftOf="@+id/sp_guige_tv"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:maxEms="8"
+            android:ellipsize="end"
+            />
+
+        <TextView
+
+            android:id="@+id/sp_guige_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="1000g*16包/件"
+            android:layout_marginLeft="30dp"
+            android:textSize="13sp" />
+
+
+        <TextView
+
+            android:id="@+id/sp_sl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+
+            android:text="3件"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            android:id="@+id/dashLine"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dip"
+            android:background="@drawable/ash_line"
+            android:layout_alignParentBottom="true"
+            android:layerType="software"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:id="@+id/dashLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/goodslist_bottom"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

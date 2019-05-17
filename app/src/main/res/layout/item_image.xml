@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image1"
+        android:layout_width="155px"
+        android:layout_height="155px"
+        android:scaleType="fitXY"
+         fresco:placeholderImage="@mipmap/pass"
+         android:layout_marginRight="20px"
+
+        />
+</LinearLayout>
